@@ -11,6 +11,20 @@ footer {
     background-color: #abd2d5;
     text-align: center;
 }
+/*  漢堡選單：按鈕  */
+.sb-toggle-left {
+    width: 60px;
+    padding: 14px;
+    margin: 12px 0px 0px 12px;
+}
+.navicon-line {
+    width: 30px;
+    height: 4px;
+    border-radius: 1px;
+    margin-bottom: 3px;
+    background-color: #fff;
+}
+
 a {
     color: white;
     text-decoration: none;

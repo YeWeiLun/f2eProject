@@ -16,25 +16,8 @@
 
 <body>
     <div id='fb-root'></div>
-    <header>
-        <a href="./"><img src="{{URL::asset('img/logo.png')}}" class="img-logo" /></a>
-        <ul class="ul-nav">
-            <a href="#" class="a-nav">
-                <li class="li-nav">Home</li>
-            </a>
-            <a href="#" class="a-nav">
-                <li class="li-nav">文章</li>
-            </a>
-            <a href="#" class="a-nav">
-                <li class="li-nav">作品分享</li>
-            </a>
-            <a href="#" class="a-nav">
-                <li class="li-nav func-login">登入</li>
-            </a>
-        </ul>
-    </header>
-    <div class="div-navBackground"></div>
-    <div class="clear"></div>
+    <!-- 主選單 -->
+    @include('navbar')
     <div class="div-landingPage">
         <div class="div-slogan">
             <p class="p-slogan">大家都厭惡的垃圾，回收後竟然變成這樣，真是太神啦！</p>
@@ -61,6 +44,7 @@
         <div class="div-footer">&copy; 2016 Taipei Tech F2E. Fred / Jeff / Wei-Cheng / Wei-Lun
         </div>
     </footer>
+    <!-- 浮框 -->
     @include('modal')
 </body>
 
