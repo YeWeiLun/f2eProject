@@ -1,0 +1,132 @@
+html, body {
+    margin: 0;
+}
+header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 7000;
+}
+footer {
+    background-color: #abd2d5;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+.ul-nav {
+    float: right;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.li-nav {
+    list-style: none;
+    display: inline;
+    margin-right: 40px;
+    color: white;
+    font-family: Calibri Light, Arial, 微軟正黑體, sans-serif;
+    font-size: 20px;
+}
+.li-nav:hover {
+    text-decoration: underline;
+}
+
+/* img */
+
+.img-logo {
+    float: left;
+    width: 200px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+/* div */
+
+.div-navBackground{
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #f0f2f2;
+  opacity: 0.5;
+}
+.clear {
+    clear: both;
+}
+.div-landingPage {
+    background-image: url(assets/landingPage.jpg);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+}
+.div-slogan {
+    width: 100%;
+    text-align: center;
+    padding-top: 15vw;
+}
+.div-moreBtn {
+    margin-left: 47vw;
+    padding: 4px;
+    box-sizing: border-box;
+    width: 10vw;
+    border: 1px solid white;
+    border-radius: 2px;
+    color: white;
+    font-family: Calibri Light, Arial, 微軟正黑體, sans-serif;
+    font-size: 25px;
+    -wekit-transition: opacity;
+    transition: opacity;
+    -wekit-transition-duration: 1s;
+    transition-duration: 1s;
+    -wekit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+}
+.div-moreBtn:hover {
+    background-color: white;
+    opacity: 0.5;
+    color: black;
+}
+.div-more {
+    width: 100%;
+    height: 700px;
+    background-color: #e0eeee;
+}
+.div-footerLink {
+    width: 100%;
+}
+.div-footerLinkContent {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    float: left;
+    width: 33%;
+}
+.div-footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #777f7f;
+    font-family: Calibri Light, Arial, 微軟正黑體, sans-serif;
+}
+
+/* span */
+
+.span-footerLink {
+    font-size: 20px;
+    color: #777f7f;
+    font-family: Calibri Light, Arial, 微軟正黑體, sans-serif;
+}
+.span-footerLink:hover {
+    color: black;
+}
+
+/* p */
+
+.p-slogan {
+    color: white;
+    font-family: Calibri Light, Arial, 微軟正黑體, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
