@@ -45,7 +45,18 @@
         </div>
     </div>
     <div id="more" class="div-more">
+      <div class="div-category">
+        <a href="#"><img src="{{URL::asset('img/Plastic.png')}}" class="img-more" title="塑膠類"/></a></div>
+      <div class="div-category-2">
+        <a href="#"><img src="{{URL::asset('img/Metal.png')}}" class="img-more" title="金屬類"/></a></div>
+      <div class="div-category-2">
+        <a href="#"><img src="{{URL::asset('img/Paper.png')}}" class="img-more" title="紙類"/></a></div>
+      <div class="div-category-3">
+        <a href="#"><a href="#"><img src="{{URL::asset('img/Glass.png')}}" class="img-more-2" title="玻璃類"/></a></div>
+      <div class="div-category-3">
+        <a href="#"><a href="#"><img src="{{URL::asset('img/Cloth.png')}}" class="img-more-3" title="衣料類"/></a></div>
     </div>
+    <div class="clear"></div>
     <footer>
         <div class="div-footerLink">
             <a href="#">
