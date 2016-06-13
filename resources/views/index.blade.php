@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <title>Bang Bang Bang</title>
     <meta name="viewport" content="width=device-width; initial-scale=1 user-scalable=0">
+    <script rel="text/javascript" src="{{ URL::asset('js/jquery-1.12.3.min.js') }}" ></script>
+    <script rel="text/javascript" src="{{ URL::asset('js/fb-jssdk.js') }}" ></script>
     <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" />
     <script rel="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}" ></script>
+    <script rel="text/javascript" src="{{ URL::asset('js/login.js') }}" ></script>
     <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}" />
     <link rel="shortcut icon" href="{{ URL::asset('img/favicon.ico') }}" />
 </head>
 
 <body>
+    <div id='fb-root'></div>
     <header>
         <a href="./"><img src="{{URL::asset('img/logo.png')}}" class="img-logo" /></a>
         <ul class="ul-nav">
@@ -25,7 +29,7 @@
                 <li class="li-nav">作品分享</li>
             </a>
             <a href="#" class="a-nav">
-                <li class="li-nav">登入</li>
+                <li class="li-nav func-login">登入</li>
             </a>
         </ul>
     </header>
@@ -41,7 +45,6 @@
         </div>
     </div>
     <div id="more" class="div-more">
-
     </div>
     <footer>
         <div class="div-footerLink">
@@ -58,6 +61,7 @@
         <div class="div-footer">&copy; 2016 Taipei Tech F2E. Fred / Jeff / Wei-Cheng / Wei-Lun
         </div>
     </footer>
+    @include('modal')
 </body>
 
 </html>

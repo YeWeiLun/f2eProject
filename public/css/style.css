@@ -12,9 +12,11 @@ footer {
     text-align: center;
 }
 a {
+    color: white;
     text-decoration: none;
 }
-a:hover {
+a:hover,a:focus {
+    color: white;
     text-decoration: none;
 }
 .ul-nav {
@@ -32,6 +34,7 @@ a:hover {
     font-size: 20px;
 }
 .li-nav:hover {
+  color: white;
     text-decoration: underline;
 }
 
@@ -54,6 +57,9 @@ a:hover {
     left: 0;
     background: #f0f2f2;
     opacity: 0.2;
+}
+.modal{
+  z-index: 8000;
 }
 .clear {
     clear: both;
