@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>Bang Bang Bang</title>
     <meta name="viewport" content="width=device-width; initial-scale=1 user-scalable=0">
+    <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" />
+    <script rel="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}" ></script>
     <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}" />
     <link rel="shortcut icon" href="{{ URL::asset('img/favicon.ico') }}" />
 </head>
