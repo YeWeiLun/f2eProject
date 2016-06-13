@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <title>Bang Bang Bang</title>
     <meta name="viewport" content="width=device-width; initial-scale=1 user-scalable=0">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}" />
+    <link rel="shortcut icon" href="{{ URL::asset('img/favicon.ico') }}" />
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img src="assets/logo.png" class="img-logo" /></a>
+        <a href="./"><img src="{{URL::asset('img/logo.png')}}" class="img-logo" /></a>
         <ul class="ul-nav">
             <a href="#" class="a-nav">
                 <li class="li-nav">Home</li>
