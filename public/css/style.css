@@ -29,7 +29,7 @@ a {
     color: white;
     text-decoration: none;
 }
-a:hover,a:focus {
+a:hover, a:focus {
     color: white;
     text-decoration: none;
 }
@@ -48,7 +48,7 @@ a:hover,a:focus {
     font-size: 20px;
 }
 .li-nav:hover {
-  color: white;
+    color: white;
     text-decoration: underline;
 }
 
@@ -59,6 +59,23 @@ a:hover,a:focus {
     width: 200px;
     margin-left: 30px;
     margin-top: 10px;
+}
+.img-more, .img-more-2, .img-more-3 {
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    width: 15vw;
+    height: 90%;
+}
+.img-more:hover, .img-more-2:hover, .img-more-3:hover {
+    opacity: 0.5;
+}
+.img-more-2 {
+    float: right;
+    margin-right: 20px;
+}
+.img-more-3 {
+    float: left;
+    margin-left: 20px;
 }
 
 /* div */
@@ -72,8 +89,8 @@ a:hover,a:focus {
     background: #f0f2f2;
     opacity: 0.2;
 }
-.modal{
-  z-index: 8000;
+.modal {
+    z-index: 8000;
 }
 .clear {
     clear: both;
@@ -87,7 +104,7 @@ a:hover,a:focus {
 .div-slogan {
     width: 100%;
     text-align: center;
-    padding-top: 15vw;
+    padding-top: 20vw;
 }
 .div-moreBtn {
     margin-left: 47vw;
@@ -113,7 +130,7 @@ a:hover,a:focus {
 }
 .div-more {
     width: 100%;
-    height: 700px;
+    height: 650px;
     background-color: #e0eeee;
 }
 .div-footerLink {
@@ -133,6 +150,22 @@ a:hover,a:focus {
     font-size: 20px;
     color: #777f7f;
     font-family: Calibri Light, Arial, 微軟正黑體, sans-serif;
+}
+.div-category {
+    width: 100%;
+    height: 33%;
+    text-align: center;
+}
+.div-category-2 {
+    width: 50%;
+    height: 33%;
+    float: left;
+    text-align: center;
+}
+.div-category-3 {
+    width: 50%;
+    height: 33%;
+    float: left;
 }
 
 /* span */
