@@ -175,12 +175,10 @@ a:hover, a:focus {
     font-size: 40px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   /*  nav：button-style  */
-  .navbar-header {
-    float: left;
-  }
   .navbar-toggle {
+    float:left;
     padding: 0;
     margin: 0;
   }
@@ -196,61 +194,45 @@ a:hover, a:focus {
       margin-bottom: 3px;
       background-color: #fff;
   }
-  #navbar .navbar-nav {
-      float: none !important;
-      margin: 7.5px -15px;
+
+  .nav-div {
+    background-color: black;
+    height: 100%;
+    width: 160px;
+    left: -160px;
+    position: fixed;
+    transition: left 0.4s ease;
   }
-  #navbar .navbar-nav .open .dropdown-menu {
-      position: static;
-      float: none;
+
+  .nav-div.in {
+    left: 0;
+  }
+  #wrapper {
+    transition: margin-left 0.4s ease;
+  }
+  #wrapper.in  {
+    margin-left: 160px;
+  }
+  nav .dropdown-menu {
       background-color: transparent;
       border: 0;
       box-shadow: none;
   }
-  #navbar .navbar-form {
-      float: none !important;
-      padding: 0;
-  }
-  #navbar .navbar-nav>li {
-      float: none;
-  }
-  /* Reposition elements affected by the sliding menu */
-  #wrapper {
-      position: relative;
-      left: 0;
-      transition: left 0.35s ease;
-  }
-  #navbar .navbar-collapse {
-      position: fixed;
-      top: 0;
-      left: -40%;
-      display: block;
-      width: 40%;
-      height: 100% !important;
-      /*max-height: 100%;*/
-      margin: 0;
-      transition: left 0.35s ease;
-  }
-  #navbar .navbar-collapse.collapsing {
-      transition: left 0.35s ease;
-  }
-  #navbar .navbar-collapse.in {
-      left: 0;
-  }
-  body.menu-slider.in {
-      overflow: hidden;
-  }
-  body.menu-slider #wrapper {
-      transition: left 0.35s ease;
-  }
-  body.menu-slider.in #wrapper {
-      left: 40%;
-  }
-  body.menu-slider.in .navbar-collapse {
-      background-color: black;
-  }
 
+  .ul-nav{
+    float: left;
+    width: 100%;
+    margin: 0;
+  }
   .li-nav {
     display: block;
+    margin: 0;
+    height: 50px;
+    padding: 10px 0px 0px 10px;
+    border-bottom: white 1px solid;
+  }
+
+  .li-nav:hover {
+    text-decoration：none;
   }
 }
