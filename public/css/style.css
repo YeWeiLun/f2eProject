@@ -11,7 +11,6 @@ footer {
     background-color: #abd2d5;
     text-align: center;
 }
-
 a {
     color: white;
     text-decoration: none;
@@ -20,9 +19,9 @@ a:hover, a:focus {
     color: white;
     text-decoration: none;
 }
-.a-moreBtn{
-  color: white;
-  font-family: Calibri Light, Arial, 微軟正黑體, sans-serif;
+.a-moreBtn {
+    color: white;
+    font-family: Calibri Light, Arial, 微軟正黑體, sans-serif;
 }
 .ul-nav {
     float: right;
@@ -97,26 +96,23 @@ a:hover, a:focus {
 .clear {
     clear: both;
 }
-.btn-group, .btn-group-vertical{
-  vertical-align:inherit;
+.btn-group, .btn-group-vertical {
+    vertical-align: inherit;
 }
 .div-landingPage {
     background-image: url(../img/landingPage.jpg);
     width: 100%;
     height: 600px;
     background-size: cover;
+    text-align: center;
 }
 .div-slogan {
     width: 100%;
     text-align: center;
     padding-top: 20vw;
 }
-.div-moreBtnBackGround{
-  padding-left: 45vw;
-  padding-right: 53vw;
-  box-sizing: border-box;
-}
 .div-moreBtn {
+    margin: 0 auto;
     padding: 4px;
     box-sizing: border-box;
     width: 10vw;
@@ -137,15 +133,21 @@ a:hover, a:focus {
     opacity: 0.5;
     color: black;
 }
-.div-more{
+.div-more {
     width: 100%;
     height: 650px;
     background-image: url(../img/landingPage-2.jpg);
     background-size: cover;
+    -wekit-transition: background-image;
+    transition: background-image;
+    -wekit-transition-duration: 1s;
+    transition-duration: 1s;
+    -wekit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
 }
-.div-moreBackGround{
-  z-index: 5000;
-  display: none;
+.div-moreBackGround {
+    z-index: 5000;
+    display: none;
 }
 .div-footerLink {
     width: 100%;
@@ -195,98 +197,87 @@ a:hover, a:focus {
     font-family: Calibri Light, Arial, 微軟正黑體, sans-serif;
     font-weight: bold;
     font-size: 40px;
+    padding-top: 270px;
 }
-
 @media screen and (max-width: 767px) {
-  /*  nav：button-style  */
-  .navbar-toggle {
-    float:left;
-    padding: 0;
-    margin: 0;
-  }
-  .nav-btn {
-      width: 60px;
-      padding: 14px;
-      margin: 12px 0px 0px 12px;
-  }
-  .nav-btn-line {
-      width: 30px;
-      height: 4px;
-      border-radius: 1px;
-      margin-bottom: 3px;
-      background-color: #fff;
-  }
-
-  .nav-div {
-    background-color: black;
-    height: 100%;
-    width: 160px;
-    left: -160px;
-    position: fixed;
-    transition: left 0.4s ease;
-  }
-
-  .nav-div.in {
-    left: 0;
-  }
-  #wrapper {
-    transition: margin-left 0.4s ease;
-  }
-  #wrapper.in  {
-    margin-left: 160px;
-  }
-  nav .dropdown-menu {
-      background-color: transparent;
-      border: 0;
-      box-shadow: none;
-  }
-<<<<<<< HEAD
-
-  .ul-nav{
-    float: left;
-    width: 100%;
-    margin: 0;
-  }
-=======
->>>>>>> origin/master
-  .li-nav {
-    display: block;
-    margin: 0;
-    height: 50px;
-    padding: 10px 0px 0px 10px;
-    border-bottom: white 1px solid;
-  }
-
-  .li-nav:hover {
-    text-decoration：none;
-  }
-  .div-category, .div-category-2, .div-category-3 {
-      width: 100%;
-      height: 20%;
-      text-align: center;
-      float: none;
-  }
-  .img-more, .img-more-2, .img-more-3, .img-more-4, .img-more-5 {
-      margin-top: 0.5vw;
-      margin-bottom: 0.5vw;
-      width: 20vw;
-      height: 90%;
-      float: none;
-      margin-left: 0;
-      margin-right: 0;
-  }
-  .div-landingPage{
-    height: 400px;
-  }
-  .p-slogan{
-    font-size: 25px;
-  }
-  .div-moreBtn{
-    width: 30vw;
-  }
-  .div-moreBtnBackGround{
-    padding-left: 32vw;
-    padding-right: 62vw;
-    box-sizing: border-box;
-  }
+    /*  nav：button-style  */
+    .navbar-toggle {
+        float: left;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-btn {
+        width: 60px;
+        padding: 14px;
+        margin: 12px 0px 0px 12px;
+    }
+    .nav-btn-line {
+        width: 30px;
+        height: 4px;
+        border-radius: 1px;
+        margin-bottom: 3px;
+        background-color: #fff;
+    }
+    .nav-div {
+        background-color: black;
+        height: 100%;
+        width: 160px;
+        left: -160px;
+        position: fixed;
+        transition: left 0.4s ease;
+    }
+    .nav-div.in {
+        left: 0;
+    }
+    #wrapper {
+        transition: margin-left 0.4s ease;
+    }
+    #wrapper.in {
+        margin-left: 160px;
+    }
+    nav .dropdown-menu {
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+    }
+    <<<<<<< HEAD .ul-nav {
+        float: left;
+        width: 100%;
+        margin: 0;
+    }
+    =======>>>>>>> origin/master .li-nav {
+        display: block;
+        margin: 0;
+        height: 50px;
+        padding: 10px 0px 0px 10px;
+        border-bottom: white 1px solid;
+    }
+    .li-nav:hover {
+        text-decoration：none;
+    }
+    .div-category, .div-category-2, .div-category-3 {
+        width: 100%;
+        height: 20%;
+        text-align: center;
+        float: none;
+    }
+    .img-more, .img-more-2, .img-more-3, .img-more-4, .img-more-5 {
+        margin-top: 0.5vw;
+        margin-bottom: 0.5vw;
+        width: 20vw;
+        height: 90%;
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .div-landingPage {
+        height: 400px;
+    }
+    .p-slogan {
+        font-size: 25px;
+        padding-top: 170px;
+    }
+    .div-moreBtn {
+        width: 30vw;
+        font-size: 20px;
 }
