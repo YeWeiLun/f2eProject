@@ -17,7 +17,7 @@
 <body>
     <div id='fb-root'></div>
     <!-- 主選單 -->
-    @include('navbar')
+    @include("layouts.navbar")
     <div class="div-landingPage">
         <div class="div-slogan">
             <p class="p-slogan">大家都厭惡的垃圾，回收後竟然變成這樣，真是太神啦！</p>

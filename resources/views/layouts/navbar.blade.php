@@ -17,7 +17,11 @@
           <li class="li-nav">作品分享</li>
       </a>
       <a href="#" class="a-nav">
+          @if(!empty($user))
+            @include('userDropDownMenu')
+          @else
           <li class="li-nav func-login">登入</li>
+          @endif
       </a>
   </ul>
 </header>
