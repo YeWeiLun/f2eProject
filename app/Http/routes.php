@@ -16,5 +16,5 @@ Route::Post("/login","UserController@loginUser");
 Route::Post("/logout","UserController@logout");
 Route::get("/sign_in","UserController@signIn");
 Route::get("/sign_up","UserController@signUp");
-Route::get("/sign_in_params","UserController@signInParams");
+Route::Post("/createUser","UserController@createUser");
 Route::get("/article","ArticleController@index");

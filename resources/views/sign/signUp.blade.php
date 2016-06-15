@@ -1,3 +1,4 @@
+{{Form::open(array('action'=>'UserController@createUser'))}}
 <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
     <h4 class="modal-title">SignUp</h4>
@@ -17,6 +18,6 @@
   </p>
 </div>
 <div class="modal-footer">
-    <button type="button" class="btn btn-primary modal-change-btn" data-url=''>Sign Up</button>
-    <input type="submit" class="btn btn-primary" value ="Sign In"></input>
+    <button type="button" class="btn btn-primary modal-change-btn" onclick="changeModalView(this);" data-url='sign_in'>Sign In</button>
+    <input type="submit" class="btn btn-primary" value ="Sign Up"></input>
 </div>

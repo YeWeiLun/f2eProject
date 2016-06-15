@@ -52,4 +52,11 @@ class UserController extends Controller
       return View::make('sign\signUp');
     }
 
+    function createUser(Request $request)
+    {
+      $acc = $request->input('acc');
+      $pwd = $request->input('pwd');
+      $name = $request->input('name');
+    }
+
 }
