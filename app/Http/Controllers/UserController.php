@@ -30,7 +30,7 @@ class UserController extends Controller
       }
       else
       {
-        
+
       }
       return redirect("");
     }
@@ -41,4 +41,15 @@ class UserController extends Controller
       Cookie::queue(Cookie::forget("pwd"));
       return redirect("");
     }
+
+    function signIn()
+    {
+      return View::make('sign\signIn');
+    }
+
+    function signUp()
+    {
+      return View::make('sign\signUp');
+    }
+
 }

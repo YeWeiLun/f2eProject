@@ -17,7 +17,7 @@
           <a href="#" class="a-nav">
               <li class="li-nav">Home</li>
           </a>
-          <a href="#" class="a-nav">
+          <a href="article" class="a-nav">
               <li class="li-nav">文章</li>
           </a>
           <a href="#" class="a-nav">
@@ -27,7 +27,7 @@
               @if(!empty($user))
                 @include('userDropDownMenu')
               @else
-                <li class="li-nav func-login">登入</li>
+                <li class="li-nav func-login" data-url="sign_in">登入</li>
               @endif
           </a>
       </ul>
