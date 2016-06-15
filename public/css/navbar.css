@@ -36,6 +36,14 @@
     margin-left: 160px;
     overflow: hidden;
   }
+
+  nav .ul-nav .btn-group {
+    display: inline;
+  }
+  nav .dropdown-menu>li>a {
+    color: white;
+    padding: 0;
+  }
   nav .dropdown-menu {
       background-color: transparent;
       border: 0;

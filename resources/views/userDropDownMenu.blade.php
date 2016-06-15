@@ -7,7 +7,6 @@
     <li class="li-nav">
       <a tabindex="-1">Hello~{{Cookie::get('name')}}</a>
     </li>
-    <li class="divider"></li>
     <li class="li-nav">
       {{Form::open(array('action'=>'UserController@logout'))}}
       <a tabindex="-1" onclick="$(this).parent('form').submit();">LogOut</a>
