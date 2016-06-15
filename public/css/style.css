@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
 }
-header {
+nav {
     width: 100%;
     height: 70px;
     position: fixed;
@@ -11,18 +11,78 @@ footer {
     background-color: #abd2d5;
     text-align: center;
 }
-/*  漢堡選單：按鈕  */
-.sb-toggle-left {
+/*  nav：button-style  */
+.navbar-header {
+  float: left;
+}
+.navbar-toggle {
+  padding: 0;
+  margin: 0;
+}
+.nav-btn {
     width: 60px;
     padding: 14px;
     margin: 12px 0px 0px 12px;
 }
-.navicon-line {
+.nav-btn-line {
     width: 30px;
     height: 4px;
     border-radius: 1px;
     margin-bottom: 3px;
     background-color: #fff;
+}
+#navbar .navbar-nav {
+    float: none !important;
+    margin: 7.5px -15px;
+}
+#navbar .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+}
+#navbar .navbar-form {
+    float: none !important;
+    padding: 0;
+}
+#navbar .navbar-nav>li {
+    float: none;
+}
+/* Reposition elements affected by the sliding menu */
+#wrapper {
+    position: relative;
+    left: 0;
+    transition: left 0.35s ease;
+}
+#navbar .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: -40%;
+    display: block;
+    width: 40%;
+    height: 100% !important;
+    /*max-height: 100%;*/
+    margin: 0;
+    transition: left 0.35s ease;
+}
+#navbar .navbar-collapse.collapsing {
+    transition: left 0.35s ease;
+}
+#navbar .navbar-collapse.in {
+    left: 0;
+}
+body.menu-slider.in {
+    overflow: hidden;
+}
+body.menu-slider #wrapper {
+    transition: left 0.35s ease;
+}
+body.menu-slider.in #wrapper {
+    left: 40%;
+}
+body.menu-slider.in .navbar-collapse {
+    background-color: black;
 }
 
 a {
@@ -186,4 +246,9 @@ a:hover, a:focus {
     font-family: Calibri Light, Arial, 微軟正黑體, sans-serif;
     font-weight: bold;
     font-size: 40px;
+}
+@media screen and (max-width: 768px) {
+  .li-nav {
+    display: block;
+  }
 }

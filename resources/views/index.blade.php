@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" />
     <script rel="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/login.js') }}" ></script>
+    <script rel="text/javascript" src="{{ URL::asset('js/nav-slider.js') }}" ></script>
     <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}" />
     <link rel="shortcut icon" href="{{ URL::asset('img/favicon.ico') }}" />
 </head>
 
 <body>
+  <div id="wrapper">
     <div id='fb-root'></div>
     <!-- 主選單 -->
     @include('navbar')
@@ -55,8 +57,9 @@
         <div class="div-footer">&copy; 2016 Taipei Tech F2E. Fred / Jeff / Wei-Cheng / Wei-Lun
         </div>
     </footer>
-    <!-- 浮框 -->
-    @include('modal')
+  </div>
+  <!-- 浮框 -->
+  @include('modal')
 </body>
 
 </html>
