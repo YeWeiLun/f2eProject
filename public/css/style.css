@@ -1,3 +1,4 @@
+/*  All size：L, M, S */
 html, body {
     margin: 0;
 }
@@ -40,7 +41,6 @@ a:hover, a:focus {
 }
 .li-nav:hover {
     color: white;
-    text-decoration: underline;
 }
 
 /* img */
@@ -197,69 +197,8 @@ a:hover, a:focus {
     font-size: 40px;
 }
 
+/*  RWD：M, S */
 @media screen and (max-width: 767px) {
-  /*  nav：button-style  */
-  .navbar-toggle {
-    float:left;
-    padding: 0;
-    margin: 0;
-  }
-  .nav-btn {
-      width: 60px;
-      padding: 14px;
-      margin: 12px 0px 0px 12px;
-  }
-  .nav-btn-line {
-      width: 30px;
-      height: 4px;
-      border-radius: 1px;
-      margin-bottom: 3px;
-      background-color: #fff;
-  }
-
-  .nav-div {
-    background-color: black;
-    height: 100%;
-    width: 160px;
-    left: -160px;
-    position: fixed;
-    transition: left 0.4s ease;
-  }
-
-  .nav-div.in {
-    left: 0;
-  }
-  #wrapper {
-    transition: margin-left 0.4s ease;
-  }
-  #wrapper.in  {
-    margin-left: 160px;
-  }
-  nav .dropdown-menu {
-      background-color: transparent;
-      border: 0;
-      box-shadow: none;
-  }
-<<<<<<< HEAD
-
-  .ul-nav{
-    float: left;
-    width: 100%;
-    margin: 0;
-  }
-=======
->>>>>>> origin/master
-  .li-nav {
-    display: block;
-    margin: 0;
-    height: 50px;
-    padding: 10px 0px 0px 10px;
-    border-bottom: white 1px solid;
-  }
-
-  .li-nav:hover {
-    text-decoration：none;
-  }
   .div-category, .div-category-2, .div-category-3 {
       width: 100%;
       height: 20%;
@@ -288,5 +227,12 @@ a:hover, a:focus {
     padding-left: 32vw;
     padding-right: 62vw;
     box-sizing: border-box;
+  }
+}
+
+/* RWD：L */
+@media screen and (min-width: 768px) {
+  .li-nav:hover {
+    text-decoration: underline;
   }
 }
