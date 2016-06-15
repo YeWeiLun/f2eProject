@@ -1,0 +1,9 @@
+{
+    "type": "ftp",
+    "host": "wd-fp.ddns.net",
+    "username": "WD-FP",
+    "password": "123456",
+    "port": 21,
+    "remotePath": "./WD",
+    "uploadOnSave": true
+}
