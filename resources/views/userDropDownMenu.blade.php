@@ -1,5 +1,5 @@
 <div class="btn-group">
-  <a class="li-nav dropdown-toggle clear-shadow" data-toggle="dropdown" href="#">
+  <a class="dropdown-toggle clear-shadow li-nav" data-toggle="dropdown" href="#">
     個人設定<span class="caret"></span>
   </a>
 
@@ -10,7 +10,7 @@
     <li class="divider"></li>
     <li class="li-nav">
       {{Form::open(array('action'=>'UserController@logout'))}}
-      <input type="submit" value ="Logout"></input>
+      <a tabindex="-1" onclick="$(this).parent('form').submit();">LogOut</a>
     </li>
   </ul>
 </div>

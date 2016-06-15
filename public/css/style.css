@@ -20,6 +20,10 @@ a:hover, a:focus {
     color: white;
     text-decoration: none;
 }
+.a-moreBtn{
+  color: white;
+  font-family: Calibri Light, Arial, 微軟正黑體, sans-serif;
+}
 .ul-nav {
     float: right;
     margin-left: 0px;
@@ -47,22 +51,33 @@ a:hover, a:focus {
     margin-left: 30px;
     margin-top: 10px;
 }
-.img-more, .img-more-2, .img-more-3 {
+.img-more, .img-more-2, .img-more-3, .img-more-4, .img-more-5 {
     margin-top: 0.5vw;
     margin-bottom: 0.5vw;
     width: 15vw;
     height: 90%;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 6000;
 }
-.img-more:hover, .img-more-2:hover, .img-more-3:hover {
-    opacity: 0.5;
+.img-more:hover, .img-more-2:hover, .img-more-3:hover, .img-more-4:hover, .img-more-5:hover {
+    background-color: #fbfba3;
 }
 .img-more-2 {
     float: right;
-    margin-right: 20px;
+    margin-right: 130px;
 }
 .img-more-3 {
     float: left;
-    margin-left: 20px;
+    margin-left: 130px;
+}
+.img-more-4 {
+    float: right;
+    margin-right: 30px;
+}
+.img-more-5 {
+    float: left;
+    margin-left: 30px;
 }
 
 /* div */
@@ -82,6 +97,9 @@ a:hover, a:focus {
 .clear {
     clear: both;
 }
+.btn-group, .btn-group-vertical{
+  vertical-align:inherit;
+}
 .div-landingPage {
     background-image: url(../img/landingPage.jpg);
     width: 100%;
@@ -93,8 +111,12 @@ a:hover, a:focus {
     text-align: center;
     padding-top: 20vw;
 }
+.div-moreBtnBackGround{
+  padding-left: 45vw;
+  padding-right: 53vw;
+  box-sizing: border-box;
+}
 .div-moreBtn {
-    margin-left: 47vw;
     padding: 4px;
     box-sizing: border-box;
     width: 10vw;
@@ -115,10 +137,15 @@ a:hover, a:focus {
     opacity: 0.5;
     color: black;
 }
-.div-more {
+.div-more{
     width: 100%;
     height: 650px;
-    background-color: #e0eeee;
+    background-image: url(../img/landingPage-2.jpg);
+    background-size: cover;
+}
+.div-moreBackGround{
+  z-index: 5000;
+  display: none;
 }
 .div-footerLink {
     width: 100%;
@@ -148,11 +175,6 @@ a:hover, a:focus {
     height: 33%;
     float: left;
     text-align: center;
-}
-.div-category-3 {
-    width: 50%;
-    height: 33%;
-    float: left;
 }
 
 /* span */
@@ -218,12 +240,15 @@ a:hover, a:focus {
       border: 0;
       box-shadow: none;
   }
+<<<<<<< HEAD
 
   .ul-nav{
     float: left;
     width: 100%;
     margin: 0;
   }
+=======
+>>>>>>> origin/master
   .li-nav {
     display: block;
     margin: 0;
@@ -234,5 +259,34 @@ a:hover, a:focus {
 
   .li-nav:hover {
     text-decoration：none;
+  }
+  .div-category, .div-category-2, .div-category-3 {
+      width: 100%;
+      height: 20%;
+      text-align: center;
+      float: none;
+  }
+  .img-more, .img-more-2, .img-more-3, .img-more-4, .img-more-5 {
+      margin-top: 0.5vw;
+      margin-bottom: 0.5vw;
+      width: 20vw;
+      height: 90%;
+      float: none;
+      margin-left: 0;
+      margin-right: 0;
+  }
+  .div-landingPage{
+    height: 400px;
+  }
+  .p-slogan{
+    font-size: 25px;
+  }
+  .div-moreBtn{
+    width: 30vw;
+  }
+  .div-moreBtnBackGround{
+    padding-left: 32vw;
+    padding-right: 62vw;
+    box-sizing: border-box;
   }
 }
