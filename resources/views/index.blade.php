@@ -18,7 +18,6 @@
 </head>
 
 <body>
-    <div id='fb-root'></div>
     <!-- 主選單 -->
     @include("layouts.navbar")
     <div class="div-landingPage">

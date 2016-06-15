@@ -13,7 +13,7 @@
 
     <div class="nav-div">
       <ul class="ul-nav">
-          <a href="#" class="a-nav">
+          <a href="./" class="a-nav">
               <li class="li-nav">Home</li>
           </a>
           <a href="article" class="a-nav">
