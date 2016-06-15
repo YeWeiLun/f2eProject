@@ -1,0 +1,57 @@
+@media screen and (max-width: 767px) {/*  nav：button-style  */
+  .navbar-toggle {
+    float:left;
+    padding: 0;
+    margin: 0;
+  }
+  .nav-btn {
+      width: 60px;
+      padding: 14px;
+      margin: 12px 0px 0px 12px;
+  }
+  .nav-btn-line {
+      width: 30px;
+      height: 4px;
+      border-radius: 1px;
+      margin-bottom: 3px;
+      background-color: #fff;
+  }
+
+  .nav-div {
+    background-color: black;
+    height: 100%;
+    width: 160px;
+    left: -160px;
+    position: fixed;
+    transition: left 0.4s ease;
+  }
+
+  .nav-div.in {
+    left: 0;
+  }
+  body {
+    transition: margin-left 0.4s ease;
+  }
+  body.in  {
+    margin-left: 160px;
+    overflow: hidden;
+  }
+  nav .dropdown-menu {
+      background-color: transparent;
+      border: 0;
+      box-shadow: none;
+  }
+  .ul-nav{
+    float: left;
+    width: 100%;
+    margin: 0;
+  }
+
+  .li-nav {
+    display: block;
+    margin: 0;
+    height: 50px;
+    padding: 10px 0px 0px 10px;
+    border-bottom: white 1px solid;
+  }
+}

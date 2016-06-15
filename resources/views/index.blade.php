@@ -7,17 +7,17 @@
     <meta name="viewport" content="width=device-width; initial-scale=1 user-scalable=0">
     <script rel="text/javascript" src="{{ URL::asset('js/jquery-1.12.3.min.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/fb-jssdk.js') }}" ></script>
-    <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" />
     <script rel="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/login.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/nav-slider.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/moreBackgroundChanged.js') }}" ></script>
+    <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}" />
+    <link rel="stylesheet" href="{{ URL::asset('css/navbar.css') }}" />
     <link rel="shortcut icon" href="{{ URL::asset('img/favicon.ico') }}" />
 </head>
 
 <body>
-  <div id="wrapper">
     <div id='fb-root'></div>
     <!-- 主選單 -->
     @include("layouts.navbar")
@@ -56,7 +56,6 @@
         <div class="div-footer">&copy; 2016 Taipei Tech F2E. Fred / Jeff / Wei-Cheng / Wei-Lun
         </div>
     </footer>
-  </div>
   <!-- 浮框 -->
   @include('modal')
 </body>
