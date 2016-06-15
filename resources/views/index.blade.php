@@ -11,6 +11,7 @@
     <script rel="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/login.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/nav-slider.js') }}" ></script>
+    <script rel="text/javascript" src="{{ URL::asset('js/moreBackgroundChanged.js') }}" ></script>
     <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}" />
     <link rel="shortcut icon" href="{{ URL::asset('img/favicon.ico') }}" />
 </head>
@@ -21,27 +22,23 @@
     <!-- 主選單 -->
     @include("layouts.navbar")
     <div class="div-landingPage">
-        <div class="div-slogan">
             <p class="p-slogan">大家都厭惡的垃圾，回收後竟然變成這樣，真是太神啦！</p>
             <br>
-            <div class="div-moreBtnBackGround">
               <a href="#more">
                   <div class="div-moreBtn">了解更多</div>
                 </a>
-            </div>
-        </div>
     </div>
     <div id="more" class="div-more">
-      <div class="div-category">
-        <a href="#"><img src="{{URL::asset('img/Plastic.png')}}" class="img-more" title="塑膠類"/></a></div>
-      <div class="div-category-2">
-        <a href="#"><img src="{{URL::asset('img/Metal.png')}}" class="img-more" title="金屬類"/></a></div>
-      <div class="div-category-2">
-        <a href="#"><img src="{{URL::asset('img/Paper.png')}}" class="img-more" title="紙類"/></a></div>
-      <div class="div-category-3">
-        <a href="#"><a href="#"><img src="{{URL::asset('img/Glass.png')}}" class="img-more-2" title="玻璃類"/></a></div>
-      <div class="div-category-3">
-        <a href="#"><a href="#"><img src="{{URL::asset('img/Cloth.png')}}" class="img-more-3" title="衣料類"/></a></div>
+        <div class="div-category">
+          <a href="#"><img src="{{URL::asset('img/Plastic.png')}}" class="img-more" title="塑膠類" data="{{URL::asset('img/PlasticRecyle.jpg')}}"/></a></div>
+        <div class="div-category-2">
+          <a href="#"><img src="{{URL::asset('img/Metal.png')}}" class="img-more-2" title="金屬類"  data="{{URL::asset('img/MetalRecyle.jpg')}}"/></a></div>
+        <div class="div-category-2">
+          <a href="#"><img src="{{URL::asset('img/Paper.png')}}" class="img-more-3" title="紙類"  data="{{URL::asset('img/PaperRecyle.jpg')}}"/></a></div>
+        <div class="div-category-2">
+          <a href="#"><a href="#"><img src="{{URL::asset('img/Glass.png')}}" class="img-more-4" title="玻璃類"  data="{{URL::asset('img/GlassRecyle.jpg')}}"/></a></div>
+        <div class="div-category-2">
+          <a href="#"><a href="#"><img src="{{URL::asset('img/Cloth.png')}}" class="img-more-5" title="衣料類"  data="{{URL::asset('img/ClothRecyle.jpg')}}"/></a></div>
     </div>
     <div class="clear"></div>
     <footer>
@@ -63,5 +60,4 @@
   <!-- 浮框 -->
   @include('modal')
 </body>
-
 </html>

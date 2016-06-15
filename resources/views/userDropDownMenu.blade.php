@@ -1,5 +1,5 @@
 <div class="btn-group">
-  <a class="li-nav dropdown-toggle clear-shadow" data-toggle="dropdown" href="#">
+  <a class="dropdown-toggle clear-shadow li-nav" data-toggle="dropdown" href="#">
     個人設定<span class="caret"></span>
   </a>
 

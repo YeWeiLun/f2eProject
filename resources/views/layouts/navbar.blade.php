@@ -1,8 +1,7 @@
-<nav id="navbar" role="navigation">
-  <div class="container-fluid">
+<nav>
     <!-- 漢堡選單：按鈕 -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+    <div>
+      <button type="button" id="toggle-nav" class="navbar-toggle">
         <div class="nav-btn">
       	  <div class="nav-btn-line"></div>
       	  <div class="nav-btn-line"></div>
@@ -12,8 +11,8 @@
     </div>
     <a href="./"><img src="{{URL::asset('img/logo.png')}}" class="img-logo" /></a>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-      <ul class="ul-nav nav navbar-nav">
+    <div class="nav-div">
+      <ul class="ul-nav">
           <a href="#" class="a-nav">
               <li class="li-nav">Home</li>
           </a>
@@ -32,7 +31,6 @@
           </a>
       </ul>
     </div>
-  </div>
 </nav>
 <div class="div-navBackground"></div>
 <div class="clear"></div>
