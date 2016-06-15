@@ -5,7 +5,7 @@
 
   <ul class="dropdown-menu">
     <li class="li-nav">
-      <a tabindex="-1">Hello~{{{$user->name}}}</a>
+      <a tabindex="-1">Hello~{{Cookie::get('name')}}</a>
     </li>
     <li class="divider"></li>
     <li class="li-nav">

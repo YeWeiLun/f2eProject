@@ -23,7 +23,7 @@
               <li class="li-nav">作品分享</li>
           </a>
           <a href="#" class="a-nav">
-              @if(!empty($user))
+              @if(Cookie::has('acc')&&Cookie::has('pwd'))
                 @include('userDropDownMenu')
               @else
                 <li class="li-nav func-login" data-url="sign_in">登入</li>

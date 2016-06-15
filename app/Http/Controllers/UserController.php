@@ -24,9 +24,11 @@ class UserController extends Controller
     {
       $acc = $request->input('acc');
       $pwd = $request->input('pwd');
+      $name = $this->model->get($acc,$pwd)->name;
       if($this->model->isExist($acc,$pwd)){
-        Cookie::queue("acc",$request->input('acc'));
-        Cookie::queue("pwd",$request->input('pwd'));
+        Cookie::queue("acc",$acc);
+        Cookie::queue("pwd",$pwd);
+        Cookie::queue("name",$name);
       }
       else
       {
