@@ -11,13 +11,19 @@ class Users extends Model
 
     static function login($account)
     {
-      
+
     }
 
-    static function get($uid)
+    static function get($acc,$pwd)
     {
-      $user = $user = DB::select('select * from user where uid = '.$uid);
+      $condition = array('account'=>$acc,'pwd'=>$pwd);
+      $user = DB::table('user')->where($condition)->get();
       return $user[0];
+    }
+
+    static function isExist($acc,$pwd)
+    {
+
     }
 
 

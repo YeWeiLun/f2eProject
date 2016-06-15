@@ -10,20 +10,22 @@ class UserController extends Controller
 {
     function getUser()
     {
-      if(Cookie::has('uid'))
-        $user = User::get(Cookie::get('uid'));
+      if(Cookie::has('acc')&&Cookie::has('pwd'))
+        $user = User::get(Cookie::get('acc'),Cookie::get('pwd'));
       return View::make('\index',compact('user'));
     }
 
     function loginUser(Request $request)
     {
-      Cookie::queue("uid",$request->input('test'));
+      Cookie::queue("acc",$request->input('acc'));
+      Cookie::queue("pwd",$request->input('pwd'));
       return redirect("");
     }
 
     function logout(Request $request)
     {
-      Cookie::queue(Cookie::forget("uid"));
+      Cookie::queue(Cookie::forget("acc"));
+      Cookie::queue(Cookie::forget("pwd"));
       return redirect("");
     }
 }

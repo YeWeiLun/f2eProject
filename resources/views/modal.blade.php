@@ -7,8 +7,14 @@
                 <h4 class="modal-title">Confirmation</h4>
             </div>
             <div class="modal-body">
-
-                {{Form::text('test','example')}}
+              <p>
+                {{Form::label('Account')}}
+                {{Form::text('acc')}}
+              </p>
+              <p>
+                {{Form::label('Password')}}
+                {{Form::text('pwd')}}
+              </p>
             </div>
             <div class="modal-footer">
                 <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
