@@ -199,87 +199,13 @@ a:hover, a:focus {
     font-size: 40px;
     padding-top: 270px;
 }
-<<<<<<< HEAD
-
-/*  RWD：M, S */
 @media screen and (max-width: 767px) {
-  .div-category, .div-category-2, .div-category-3 {
-      width: 100%;
-      height: 20%;
-      text-align: center;
-      float: none;
-  }
-  .img-more, .img-more-2, .img-more-3, .img-more-4, .img-more-5 {
-      margin-top: 0.5vw;
-      margin-bottom: 0.5vw;
-      width: 20vw;
-      height: 90%;
-      float: none;
-      margin-left: 0;
-      margin-right: 0;
-  }
-  .div-landingPage{
-    height: 400px;
-  }
-  .p-slogan{
-    font-size: 25px;
-  }
-  .div-moreBtn{
-    width: 30vw;
-  }
-  .div-moreBtnBackGround{
-    padding-left: 32vw;
-    padding-right: 62vw;
-    box-sizing: border-box;
-  }
-=======
-@media screen and (max-width: 767px) {
-    /*  nav：button-style  */
-    .navbar-toggle {
-        float: left;
-        padding: 0;
-        margin: 0;
-    }
-    .nav-btn {
-        width: 60px;
-        padding: 14px;
-        margin: 12px 0px 0px 12px;
-    }
-    .nav-btn-line {
-        width: 30px;
-        height: 4px;
-        border-radius: 1px;
-        margin-bottom: 3px;
-        background-color: #fff;
-    }
-    .nav-div {
-        background-color: black;
-        height: 100%;
-        width: 160px;
-        left: -160px;
-        position: fixed;
-        transition: left 0.4s ease;
-    }
-    .nav-div.in {
-        left: 0;
-    }
-    #wrapper {
-        transition: margin-left 0.4s ease;
-    }
-    #wrapper.in {
-        margin-left: 160px;
-    }
-    nav .dropdown-menu {
-        background-color: transparent;
-        border: 0;
-        box-shadow: none;
-    }
-    <<<<<<< HEAD .ul-nav {
+    .ul-nav {
         float: left;
         width: 100%;
         margin: 0;
     }
-    =======>>>>>>> origin/master .li-nav {
+    .li-nav {
         display: block;
         margin: 0;
         height: 50px;
@@ -314,7 +240,7 @@ a:hover, a:focus {
     .div-moreBtn {
         width: 30vw;
         font-size: 20px;
->>>>>>> origin/master
+    }
 }
 
 /* RWD：L */
