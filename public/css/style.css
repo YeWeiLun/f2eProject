@@ -51,22 +51,33 @@ a:hover, a:focus {
     margin-left: 30px;
     margin-top: 10px;
 }
-.img-more, .img-more-2, .img-more-3 {
+.img-more, .img-more-2, .img-more-3, .img-more-4, .img-more-5 {
     margin-top: 0.5vw;
     margin-bottom: 0.5vw;
     width: 15vw;
     height: 90%;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 6000;
 }
-.img-more:hover, .img-more-2:hover, .img-more-3:hover {
-    opacity: 0.5;
+.img-more:hover, .img-more-2:hover, .img-more-3:hover, .img-more-4:hover, .img-more-5:hover {
+    background-color: #fbfba3;
 }
 .img-more-2 {
     float: right;
-    margin-right: 20px;
+    margin-right: 130px;
 }
 .img-more-3 {
     float: left;
-    margin-left: 20px;
+    margin-left: 130px;
+}
+.img-more-4 {
+    float: right;
+    margin-right: 30px;
+}
+.img-more-5 {
+    float: left;
+    margin-left: 30px;
 }
 
 /* div */
@@ -85,6 +96,9 @@ a:hover, a:focus {
 }
 .clear {
     clear: both;
+}
+.btn-group, .btn-group-vertical{
+  vertical-align:inherit;
 }
 .div-landingPage {
     background-image: url(../img/landingPage.jpg);
@@ -123,10 +137,15 @@ a:hover, a:focus {
     opacity: 0.5;
     color: black;
 }
-.div-more {
+.div-more{
     width: 100%;
     height: 650px;
-    background-color: #e0eeee;
+    background-image: url(../img/landingPage-2.jpg);
+    background-size: cover;
+}
+.div-moreBackGround{
+  z-index: 5000;
+  display: none;
 }
 .div-footerLink {
     width: 100%;
@@ -157,11 +176,6 @@ a:hover, a:focus {
     float: left;
     text-align: center;
 }
-.div-category-3 {
-    width: 50%;
-    height: 33%;
-    float: left;
-}
 
 /* span */
 
@@ -183,7 +197,7 @@ a:hover, a:focus {
     font-size: 40px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   /*  nav：button-style  */
   .navbar-header {
     float: left;
@@ -266,7 +280,7 @@ a:hover, a:focus {
       text-align: center;
       float: none;
   }
-  .img-more, .img-more-2, .img-more-3 {
+  .img-more, .img-more-2, .img-more-3, .img-more-4, .img-more-5 {
       margin-top: 0.5vw;
       margin-bottom: 0.5vw;
       width: 20vw;
