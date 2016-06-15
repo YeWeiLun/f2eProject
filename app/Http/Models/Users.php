@@ -9,21 +9,34 @@ class Users extends Model
 {
     protected $table = 'user';
 
-    static function login($account)
+     function login($account)
     {
 
     }
 
-    static function get($acc,$pwd)
+    function get($acc,$pwd)
     {
       $condition = array('account'=>$acc,'pwd'=>$pwd);
-      $user = DB::table('user')->where($condition)->get();
+      $user = DB::table($this->table)->where($condition)->get();
       return $user[0];
     }
 
-    static function isExist($acc,$pwd)
+    function isExist($acc,$pwd)
     {
+      $condition = array('account'=>$acc,'pwd'=>$pwd);
+      $user = DB::table($this->table)->where($condition)->get();
+      if(count($user)>0)
+        return true;
+      return false;
+    }
 
+    function isDuplicate($acc)
+    {
+        $condition = array('account'=>$acc);
+        $user = DB::table($this->table)->where($condition)->get();
+        if(count($user)>0)
+          return true;
+        return false;
     }
 
 
