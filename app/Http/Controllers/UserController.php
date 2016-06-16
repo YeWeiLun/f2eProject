@@ -16,10 +16,16 @@ class UserController extends Controller
     }
     function getUser()
     {
+      $acc="";
+      $pwd="";
       if(Cookie::has('acc')&&Cookie::has('pwd'))
       {
         $acc = Cookie::get('acc');
         $pwd = Cookie::get('pwd');
+      }
+      else
+      {
+        Session::flash("notice","使用者不存在");
       }
       if($this->model->isExist($acc,$pwd))
         $user = $this->model->get($acc,$pwd);
@@ -81,13 +87,17 @@ class UserController extends Controller
       }
       else
       {
-        $user = array(
-          "account"=>$acc,
-          "pwd"=>$pwd,
-          "name"=>$name
-        );
-        $this->model->createUser($user);
-        $this->login($user);
+        if(strlen($acc)==0||strlen($pwd)==0||strlen($name)==0)
+          Session::flash("notice","請輸入帳號密碼以及使用者名稱");
+        else {
+          $user = array(
+            "account"=>$acc,
+            "pwd"=>$pwd,
+            "name"=>$name
+          );
+          $this->model->createUser($user);
+          $this->login($user);
+        }
       }
       return redirect("");
     }
