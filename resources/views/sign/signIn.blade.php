@@ -14,6 +14,6 @@
   </p>
 </div>
 <div class="modal-footer">
-    <button type="button" class="btn btn-primary modal-change-btn" onclick="changeModalView(this);" data-url="sign_up">點我註冊</button>
+    <button type="button" class="btn btn-info modal-change-btn" onclick="changeModalView(this);" data-url="sign_up">點我註冊</button>
     <input type="submit" class="btn btn-primary" value ="確認送出"></input>
 </div>

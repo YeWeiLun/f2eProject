@@ -14,22 +14,9 @@ class UserController extends Controller
     {
       $this->model = new User;
     }
-    function getUser()
+    function index()
     {
-      $acc="";
-      $pwd="";
-      if(Cookie::has('acc')&&Cookie::has('pwd'))
-      {
-        $acc = Cookie::get('acc');
-        $pwd = Cookie::get('pwd');
-      }
-      else
-      {
-        Session::flash("notice","使用者不存在");
-      }
-      if($this->model->isExist($acc,$pwd))
-        $user = $this->model->get($acc,$pwd);
-      return View::make('\index',compact('user'));
+      return View::make('\index');
     }
 
     function login($data)
