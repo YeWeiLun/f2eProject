@@ -39,5 +39,10 @@ class Users extends Model
         return false;
     }
 
+    function createUser($data)
+    {
+      DB::table($this->table)->insert($data);
+    }
+
 
 }

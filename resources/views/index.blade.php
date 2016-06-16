@@ -18,6 +18,9 @@
 </head>
 
 <body>
+  @if (Session::has("notice"))
+    {{Session::get("notice")}}
+  @endif
     <!-- 主選單 -->
     @include("layouts.navbar")
     <div class="div-landingPage">
@@ -58,5 +61,6 @@
     </footer>
   <!-- 浮框 -->
   @include('modal')
+
 </body>
 </html>

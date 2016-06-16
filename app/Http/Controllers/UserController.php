@@ -5,6 +5,7 @@ use App\Http\Models\Users as User;
 use App\Http\Controllers\Controller as Controller;
 use View;
 use Cookie;
+use Session;
 use Illuminate\Http\Request;
 class UserController extends Controller
 {
@@ -20,27 +21,37 @@ class UserController extends Controller
       return View::make('\index',compact('user'));
     }
 
+    function login($data)
+    {
+      $acc = $data['account'];
+      $pwd = $data['pwd'];
+      if($this->model->isExist($acc,$pwd)){
+        $name = $this->model->get($acc,$pwd)->name;
+        $user = array("acc"=>$acc,"name"=>$name);
+        Session::push("user",$user);
+        // Cookie::queue("acc",$acc);
+        // Cookie::queue("pwd",$pwd);
+        // Cookie::queue("name",$name);
+      }
+      else
+      {
+        Session::flash("notice","帳號密碼錯誤");
+      }
+    }
+
     function loginUser(Request $request)
     {
       $acc = $request->input('acc');
       $pwd = $request->input('pwd');
-      $name = $this->model->get($acc,$pwd)->name;
-      if($this->model->isExist($acc,$pwd)){
-        Cookie::queue("acc",$acc);
-        Cookie::queue("pwd",$pwd);
-        Cookie::queue("name",$name);
-      }
-      else
-      {
-
-      }
+      $this->login(['account'=>$acc,'pwd'=>$pwd]);
       return redirect("");
     }
 
     function logout(Request $request)
     {
-      Cookie::queue(Cookie::forget("acc"));
-      Cookie::queue(Cookie::forget("pwd"));
+      Session::forget("user");
+      // Cookie::queue(Cookie::forget("acc"));
+      // Cookie::queue(Cookie::forget("pwd"));
       return redirect("");
     }
 
@@ -59,6 +70,21 @@ class UserController extends Controller
       $acc = $request->input('acc');
       $pwd = $request->input('pwd');
       $name = $request->input('name');
+      if($this->model->isDuplicate($acc))
+      {
+        Session::flash("notice","帳號重複");
+      }
+      else
+      {
+        $user = array(
+          "account"=>$acc,
+          "pwd"=>$pwd,
+          "name"=>$name
+        );
+        $this->model->createUser($user);
+        $this->login($user);
+      }
+      return redirect("");
     }
 
 }
