@@ -21,7 +21,7 @@
 
 <body>
   @if (Session::has("notice"))
-  <div class="alert alert-success simplyNotice">
+  <div class="alert alert-success simplyNotice notice-up">
     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
     <strong>{{Session::get("notice")}}!</strong>
   </div>
