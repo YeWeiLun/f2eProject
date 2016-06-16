@@ -89,6 +89,12 @@ a:hover, a:focus {
     left: 0;
     background: #f0f2f2;
     opacity: 0.2;
+    -wekit-transition: opacity;
+    transition: opacity;
+    -wekit-transition-duration: 1s;
+    transition-duration: 1s;
+    -wekit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
 }
 .modal {
     z-index: 8000;

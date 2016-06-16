@@ -13,15 +13,19 @@
     <script rel="text/javascript" src="{{ URL::asset('js/moreBackgroundChanged.js') }}" ></script>
     <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}" />
+    <link rel="stylesheet" href="{{ URL::asset('css/article.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/navbar.css') }}" />
     <link rel="shortcut icon" href="{{ URL::asset('img/favicon.ico') }}" />
 </head>
 
 <body>
+  @if (Session::has("notice"))
+    {{Session::get("notice")}}
+  @endif
     <!-- 主選單 -->
     @include("layouts.navbar")
 
-    
+
     <footer>
         <div class="div-footerLink">
             <a href="#">
