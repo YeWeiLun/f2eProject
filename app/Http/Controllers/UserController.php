@@ -14,11 +14,9 @@ class UserController extends Controller
     {
       $this->model = new User;
     }
-    function getUser()
+    function index()
     {
-      if(Cookie::has('acc')&&Cookie::has('pwd'))
-        $user = $this->model->get(Cookie::get('acc'),Cookie::get('pwd'));
-      return View::make('\index',compact('user'));
+      return View::make('\index');
     }
 
     function login($data)
@@ -76,13 +74,17 @@ class UserController extends Controller
       }
       else
       {
-        $user = array(
-          "account"=>$acc,
-          "pwd"=>$pwd,
-          "name"=>$name
-        );
-        $this->model->createUser($user);
-        $this->login($user);
+        if(strlen($acc)==0||strlen($pwd)==0||strlen($name)==0)
+          Session::flash("notice","請輸入帳號密碼以及使用者名稱");
+        else {
+          $user = array(
+            "account"=>$acc,
+            "pwd"=>$pwd,
+            "name"=>$name
+          );
+          $this->model->createUser($user);
+          $this->login($user);
+        }
       }
       return redirect("");
     }
