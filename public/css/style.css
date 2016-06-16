@@ -207,6 +207,17 @@ a:hover, a:focus {
     font-size: 40px;
     padding-top: 270px;
 }
+
+/*  浮框  */
+
+.modal-dialog {
+  width: 250px;
+  margin: 30px auto;
+}
+.modal-footer {
+  text-align: center;
+}
+
 @media screen and (max-width: 767px) {
     .ul-nav {
         float: left;
