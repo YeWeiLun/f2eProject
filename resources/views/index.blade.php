@@ -11,6 +11,7 @@
     <script rel="text/javascript" src="{{ URL::asset('js/login.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/nav-slider.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/moreBackgroundChanged.js') }}" ></script>
+    <script rel="text/javascript" src="{{ URL::asset('js/nav-scroll.js') }}" ></script>
     <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/navbar.css') }}" />
@@ -42,6 +43,7 @@
         <div class="div-category-2">
           <a href="#"><a href="#"><img src="{{URL::asset('img/Cloth.png')}}" class="img-more-5" title="衣料類"  data="{{URL::asset('img/ClothRecyle.jpg')}}"/></a></div>
     </div>
+
     <div class="clear"></div>
     <footer>
         <div class="div-footerLink">

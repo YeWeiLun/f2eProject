@@ -1,6 +1,7 @@
 /*  All size：L, M, S */
 html, body {
     margin: 0;
+    font-family: Calibri Light, Arial, 微軟正黑體, sans-serif;
 }
 nav {
     width: 100%;
@@ -87,7 +88,7 @@ a:hover, a:focus {
     position: fixed;
     top: 0;
     left: 0;
-    background: #f0f2f2;
+    background: #abd2d5;
     opacity: 0.2;
 }
 .modal {
@@ -248,5 +249,17 @@ a:hover, a:focus {
 @media screen and (min-width: 768px) {
   .li-nav:hover {
     text-decoration: underline;
+  }
+  nav .dropdown-menu {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    top: 50px;
+    background-color: transparent;
+  }
+
+  .dropdown-menu>li>a {
+    color: white;
+    padding: 0;
   }
 }

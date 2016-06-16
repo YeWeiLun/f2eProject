@@ -5,11 +5,11 @@
 
   <ul class="dropdown-menu">
     <li class="li-nav">
-      <a tabindex="-1">Hello~{{Session::get("user")[0]['name']}}</a>
+      <a tabindex="-1">你好,{{Session::get("user")[0]['name']}}!</a>
     </li>
     <li class="li-nav">
       {{Form::open(array('action'=>'UserController@logout'))}}
-      <a tabindex="-1" onclick="$(this).parent('form').submit();">LogOut</a>
+      <a tabindex="-1" onclick="$(this).parent('form').submit();">登出</a>
     </li>
   </ul>
 </div>
