@@ -17,7 +17,12 @@ class UserController extends Controller
     function getUser()
     {
       if(Cookie::has('acc')&&Cookie::has('pwd'))
-        $user = $this->model->get(Cookie::get('acc'),Cookie::get('pwd'));
+      {
+        $acc = Cookie::get('acc');
+        $pwd = Cookie::get('pwd');
+      }
+      if($this->model->isExist($acc,$pwd))
+        $user = $this->model->get($acc,$pwd);
       return View::make('\index',compact('user'));
     }
 
