@@ -243,6 +243,9 @@ a:hover, a:focus {
         width: 30vw;
         font-size: 20px;
     }
+    .div-footer {
+      font-size: 12px;
+    }
 }
 
 /* RWD：L */
@@ -258,8 +261,9 @@ a:hover, a:focus {
     background-color: transparent;
   }
 
-  .dropdown-menu>li>a {
+  .dropdown-menu>li a {
     color: white;
     padding: 0;
+    font-size: 18px;
   }
 }
