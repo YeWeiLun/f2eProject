@@ -11,5 +11,6 @@
       {{Form::open(array('action'=>'UserController@logout'))}}
       <a tabindex="-1" onclick="$(this).parent('form').submit();">登出</a>
     </li>
+    <div class="div-dropdown-background-1 navBackground"></div>
   </ul>
 </div>

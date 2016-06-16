@@ -32,5 +32,5 @@
       </ul>
     </div>
 </nav>
-<div class="div-navBackground"></div>
+<div class="div-navBackground navBackground"></div>
 <div class="clear"></div>
