@@ -160,6 +160,7 @@ a:hover, a:focus {
     width: 33%;
 }
 .div-footer {
+    display: inline-block;
     padding-top: 20px;
     padding-bottom: 20px;
     box-sizing: border-box;
