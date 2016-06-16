@@ -263,9 +263,4 @@ a:hover, a:focus {
     top: 50px;
     background-color: transparent;
   }
-
-  .dropdown-menu>li>a {
-    color: white;
-    padding: 0;
-  }
 }

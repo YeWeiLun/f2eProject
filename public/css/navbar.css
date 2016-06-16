@@ -1,3 +1,8 @@
+nav .dropdown-menu>li a {
+  color: white;
+  padding: 0 0 0 10px;
+}
+
 @media screen and (max-width: 767px) {/*  nav：button-style  */
   .navbar-toggle {
     float:left;
@@ -39,10 +44,6 @@
 
   nav .ul-nav .btn-group {
     display: inline;
-  }
-  nav .dropdown-menu>li>a {
-    color: white;
-    padding: 0;
   }
   nav .dropdown-menu {
       background-color: transparent;
