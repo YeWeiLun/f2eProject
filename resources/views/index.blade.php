@@ -39,6 +39,7 @@
         <div class="div-category-2">
           <a href="#"><a href="#"><img src="{{URL::asset('img/Cloth.png')}}" class="img-more-5" title="衣料類"  data="{{URL::asset('img/ClothRecyle.jpg')}}"/></a></div>
     </div>
+    
     <div class="clear"></div>
     <footer>
         <div class="div-footerLink">

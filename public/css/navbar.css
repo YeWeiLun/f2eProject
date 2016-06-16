@@ -62,4 +62,8 @@
     padding: 10px 0px 0px 10px;
     border-bottom: white 1px solid;
   }
+
+  .dropdown-menu .in{
+    transition: bto 0.4s ease;
+  }
 }

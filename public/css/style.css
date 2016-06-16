@@ -249,4 +249,16 @@ a:hover, a:focus {
   .li-nav:hover {
     text-decoration: underline;
   }
+  nav .dropdown-menu {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    top: 50px;
+    background-color: transparent;
+  }
+
+  .dropdown-menu>li>a {
+    color: white;
+    padding: 0;
+  }
 }
