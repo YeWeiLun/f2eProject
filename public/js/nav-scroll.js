@@ -4,8 +4,8 @@ $(document).ready(function() {
             $(".div-navBackground").css('opacity','0.2');
         }
         else if ($(window).scrollTop() != 0) {
-          $(".div-navBackground").css('opacity','1');
-          $(".div-navBackground").css('background-color','#9cc5cf');
+          $(".div-navBackground").css('opacity','0.6');
+          $(".div-navBackground").css('background-color','#abd2d5');
         }
     });
 });
