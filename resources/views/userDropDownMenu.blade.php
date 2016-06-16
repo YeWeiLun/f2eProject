@@ -5,7 +5,7 @@
 
   <ul class="dropdown-menu">
     <li class="li-nav">
-      <a tabindex="-1">Hello~{{Cookie::get('name')}}</a>
+      <a tabindex="-1">Hello~{{Session::get("user")[0]['name']}}</a>
     </li>
     <li class="li-nav">
       {{Form::open(array('action'=>'UserController@logout'))}}

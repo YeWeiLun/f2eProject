@@ -20,9 +20,10 @@ function changeModalView(element)
   $.ajax({
     url : $(element).data('url'),
     type : 'get',
-    success:function(data)
-    {
-      $(".modal-content").html(data);
-    }
+    success:
+      function(data)
+      {
+        $(".modal-content").html(data);
+      }
   });
 }
