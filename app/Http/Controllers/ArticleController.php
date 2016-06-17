@@ -9,10 +9,12 @@ use Illuminate\Http\Request;
 class ArticleController extends Controller
 {
     protected $model = "";
+    
     function __construct()
     {
       $this->model = new Article;
     }
+
     function index()
     {
       return View::make("/article/article");

@@ -9,6 +9,7 @@ class Articles extends Model
 {
     protected $table = 'Article';
 
-
-
+    function __construct()
+    {
+    }
 }
