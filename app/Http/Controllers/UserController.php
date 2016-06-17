@@ -16,6 +16,15 @@ class UserController extends Controller
     }
     function index()
     {
+      if(Session::has('user'))
+      {
+        $user = Session::get('user');
+        $condition=array('account'=>$user[0]['acc'],'pwd'=>$user[0]['pwd']);
+        if(!$this->model->isExist($condition))
+        {
+          Session::forget('user');
+        }
+      }
       return View::make('\index');
     }
 
@@ -23,13 +32,11 @@ class UserController extends Controller
     {
       $acc = $data['account'];
       $pwd = $data['pwd'];
-      if($this->model->isExist($acc,$pwd)){
-        $name = $this->model->get($acc,$pwd)->name;
-        $user = array("acc"=>$acc,"name"=>$name);
+      if($this->model->isExist($data)){
+        $result = $this->model->get($data);
+        $name = $result[0]->name;
+        $user = array("acc"=>$acc,"pwd"=>$pwd,"name"=>$name);
         Session::push("user",$user);
-        // Cookie::queue("acc",$acc);
-        // Cookie::queue("pwd",$pwd);
-        // Cookie::queue("name",$name);
       }
       else
       {
@@ -48,8 +55,6 @@ class UserController extends Controller
     function logout(Request $request)
     {
       Session::forget("user");
-      // Cookie::queue(Cookie::forget("acc"));
-      // Cookie::queue(Cookie::forget("pwd"));
       return redirect("");
     }
 
@@ -68,21 +73,23 @@ class UserController extends Controller
       $acc = $request->input('acc');
       $pwd = $request->input('pwd');
       $name = $request->input('name');
-      if($this->model->isDuplicate($acc))
+      //Duplicate Check
+      if($this->model->isExist(['account'=>$acc]))
       {
         Session::flash("notice","帳號重複");
       }
       else
       {
         if(strlen($acc)==0||strlen($pwd)==0||strlen($name)==0)
-          Session::flash("notice","請輸入帳號密碼以及使用者名稱");
+          Session::flash("notice","請正確輸入帳號密碼以及使用者名稱");
         else {
           $user = array(
             "account"=>$acc,
             "pwd"=>$pwd,
             "name"=>$name
           );
-          $this->model->createUser($user);
+          $this->model->insert($user);
+          Session::flash("notice","註冊成功!");
           $this->login($user);
         }
       }
