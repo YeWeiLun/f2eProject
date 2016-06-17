@@ -11,6 +11,7 @@
     <script rel="text/javascript" src="{{ URL::asset('js/login.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/nav-slider.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/moreBackgroundChanged.js') }}" ></script>
+    <script rel="text/javascript" src="{{ URL::asset('js/masonry.pkgd.min.js') }}" ></script>
     <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/article.css') }}" />
@@ -22,10 +23,35 @@
   @if (Session::has("notice"))
     {{Session::get("notice")}}
   @endif
-    <!-- 主選單 -->
-    @include("layouts.navbar")
+  <!-- 主選單 -->
+  @include("layouts.navbar")
+  <!-- Content -->
+  <section>
+    <div class="grid">
+      <div class="grid-item">
+        <div class="grid-content">
 
-    @include("layouts.footer")
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="grid-content">
+
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="grid-content">
+
+        </div>
+      </div>
+      
+      <div class="grid-item">
+        <div class="grid-content">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  @include("layouts.footer")
   <!-- 浮框 -->
   @include('modal')
 </body>

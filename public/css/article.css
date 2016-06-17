@@ -1,0 +1,56 @@
+* { box-sizing: border-box; }
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+
+body { font-family: sans-serif; }
+
+nav { top: 0px; }
+
+/* ---- grid ---- */
+
+.grid {
+  background: white;
+  margin-top: 70px;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 25%;
+  padding: 10px;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-content {
+  background-color: yellow;
+  height: 100px;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .grid-item {
+    width: 33.33%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .grid-item {
+    width: 50%;
+  }
+}
