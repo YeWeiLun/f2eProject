@@ -21,6 +21,7 @@ a:hover, a:focus {
     color: white;
     text-decoration: none;
 }
+
 .a-moreBtn {
     color: white;
     font-family: Calibri Light, Arial, 微軟正黑體, sans-serif;
@@ -284,6 +285,11 @@ a:hover, a:focus {
   .dropdown-menu>li a {
     color: white;
     padding: 15px 0 15px 0;
+  }
+
+  .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    background-color: transparent;
+    color: inherit;
   }
 
   .div-dropdown-background-1 {

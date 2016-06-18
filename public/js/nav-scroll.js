@@ -3,6 +3,7 @@ $(document).ready(function() {
         if ($(window).scrollTop() == 0) {
             $(".navBackground").css('opacity','0.2');
             $(".li-nav").css('color','white');
+            $(".a-sub-nav").css('color', 'white');
         }
         else if ($(window).scrollTop() != 0) {
           $(".navBackground").css('opacity','0.8');
@@ -14,6 +15,7 @@ $(document).ready(function() {
           $(".navBackground").css('-wekit-transition-timing-function','ease-in');
           $(".navBackground").css('transition-timing-function','ease-in');
           $(".li-nav").css('color','black');
+          $(".a-sub-nav").css('color', 'black');
         }
     });
 });
