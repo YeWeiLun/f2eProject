@@ -9,4 +9,4 @@ var $grid = $('.grid').masonry({
 // layout Isotope after each image loads
 $grid.imagesLoaded().progress( function() {
   $grid.masonry();
-});  
+});

@@ -12,6 +12,7 @@
     <script rel="text/javascript" src="{{ URL::asset('js/nav-slider.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/nav-scroll.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/masonry.pkgd.min.js') }}" ></script>
+    <script rel="text/javascript" src="{{ URL::asset('js/article.js') }}" ></script>
     <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/article.css') }}" />
@@ -30,23 +31,27 @@
     <div class="grid">
       <div class="grid-item">
         <div class="grid-content">
-
+          <img src="{{URL::asset('img/test/cinderella.jpg')}}" alt>
+          <figcaption>Rapunzel, clothed in 1820’s period fashion</figcaption>
         </div>
       </div>
       <div class="grid-item">
         <div class="grid-content">
-
+            <img src="{{URL::asset('img/test/ariel.jpg')}}" alt>
+            <figcaption>Rapunzel, clothed in 1820’s period fashion</figcaption>
         </div>
       </div>
       <div class="grid-item">
         <div class="grid-content">
-
+          <img src="{{URL::asset('img/test/mulan_2.jpg')}}" alt>
+          <figcaption>Rapunzel, clothed in 1820’s period fashion</figcaption>
         </div>
       </div>
 
       <div class="grid-item">
         <div class="grid-content">
-
+          <img src="{{URL::asset('img/test/pocahontas_2.jpg')}}" alt>
+          <figcaption>Rapunzel, clothed in 1820’s period fashion</figcaption>
         </div>
       </div>
     </div>
