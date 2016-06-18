@@ -10,7 +10,7 @@
     <script rel="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/login.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/nav-slider.js') }}" ></script>
-    <script rel="text/javascript" src="{{ URL::asset('js/moreBackgroundChanged.js') }}" ></script>
+    <script rel="text/javascript" src="{{ URL::asset('js/nav-scroll.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/masonry.pkgd.min.js') }}" ></script>
     <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}" />
@@ -43,7 +43,7 @@
 
         </div>
       </div>
-      
+
       <div class="grid-item">
         <div class="grid-content">
 
