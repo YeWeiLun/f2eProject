@@ -187,6 +187,10 @@ a:hover, a:focus {
     float: left;
     text-align: center;
 }
+.btn-group.open .dropdown-toggle{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
 
 /* span */
 
@@ -301,5 +305,7 @@ a:hover, a:focus {
       background: #abd2d5;
       opacity: 0.2;
       z-index: -100;
+      border: 1px solid #8e8e8e;
+      border-radius: 3px;
   }
 }
