@@ -1,7 +1,7 @@
 * { box-sizing: border-box; }
 
 /* force scrollbar */
-html { overflow-y: scroll; }
+html { overflow-y: scroll; background-color: #abd2d5;}
 
 body { font-family: sans-serif; }
 
@@ -34,8 +34,8 @@ nav { top: 0px; }
 }
 
 .grid-content {
-  background-color: yellow;
-  height: 100px;
+  background-color: #72b2bd;
+  height: 300px;
 }
 
 .grid-item img {
@@ -43,14 +43,20 @@ nav { top: 0px; }
   max-width: 100%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
   .grid-item {
-    width: 33.33%;
+    width: 33.3%;
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 768px) {
   .grid-item {
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .grid-item {
+    width: 100%;
   }
 }
