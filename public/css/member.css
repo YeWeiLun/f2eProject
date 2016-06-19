@@ -1,26 +1,45 @@
-html{
-  background-color: #abd2d5;
+*{
+  box-sizing: border-box;
 }
-.content{
+.div-navWhiteBackGround{
+  background-color: white;
+  height: 70px;
+}
+.div-content{
   width: 100%;
+  background-color: #262829;
 }
 .div-oneMember{
   width: 100%;
-  padding-top: 90px;
+  padding-top: 20px;
 }
 .div-memberPic{
-  width: 50%;
+  width: 100%;
   float: left;
 }
 .div-memberInfo{
-  width: 50%;
+  width: 100%;
   float: left;
 }
 .div-navBackground {
     opacity: 0.6;
 }
+.div-infoDetail{
+  width: 20%;
+  height: 200px;
+  float: left;
+  margin-left: 4%;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: white;
 
+}
 /* img */
 .img-memberPic{
-  width: 70%;
+  width: 20%;
+  height: 359px;
+  float: left;
+  margin-left: 4%;
+  margin-bottom: 15px;
+  border-radius: 5px;
 }
