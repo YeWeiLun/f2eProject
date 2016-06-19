@@ -28,29 +28,50 @@
   <!-- Content -->
   <div class="div-navWhiteBackGround"></div>
   <div class="div-content">
-    <div class="div-oneMember">
-      <div class="div-memberPic">
-        <img src="{{URL::asset('img/fred.jpg')}}" class="img-memberPic" title="陳品政"/>
-        <img src="{{URL::asset('img/jeff.jpg')}}" class="img-memberPic" title="陳政皓"/>
-        <img src="{{URL::asset('img/weicheng.jpg')}}" class="img-memberPic" title="周韋丞"/>
-        <img src="{{URL::asset('img/weilun.jpg')}}" class="img-memberPic" title="葉偉倫"/>
+    <div>
+      <div class="div-oneMember">
+          <img src="{{URL::asset('img/fred.jpg')}}" class="img-memberPic" title="陳品政"/>
+          <div class="div-infoDetail">
+            <p class="p-memberTitle">陳品政 Fred</p>
+            <span class="span-memberContent">生日：8/21</span><br>
+            <span class="span-memberContent">興趣：打球、聽音樂</span><br>
+            <span class="span-memberContent">擅長：Java、Html、CSS</span><br>
+            <span class="span-memberContent">夢想：無憂無慮過生活</span>
+          </div>
+        </div>
+        <div class="div-oneMember">
+          <img src="{{URL::asset('img/jeff.jpg')}}" class="img-memberPic" title="陳政皓"/>
+          <div class="div-infoDetail">
+              <p class="p-memberTitle">陳政皓 Jeff</p>
+              <span class="span-memberContent">生日：</span><br>
+              <span class="span-memberContent">興趣：</span><br>
+              <span class="span-memberContent">擅長：</span><br>
+              <span class="span-memberContent">夢想：</span>
+          </div>
+        </div>
+        <div class="div-oneMember">
+          <img src="{{URL::asset('img/weicheng.jpg')}}" class="img-memberPic" title="周韋丞"/>
+          <div class="div-infoDetail">
+            <p class="p-memberTitle">周韋丞 Wei-Cheng</p>
+            <span class="span-memberContent">生日：</span><br>
+            <span class="span-memberContent">興趣：</span><br>
+            <span class="span-memberContent">擅長：</span><br>
+            <span class="span-memberContent">夢想：</span>
+          </div>
+        </div>
+        <div class="div-oneMember">
+          <img src="{{URL::asset('img/weilun.jpg')}}" class="img-memberPic" title="葉偉倫"/>
+          <div class="div-infoDetail">
+            <p class="p-memberTitle">葉偉倫 Wei-Lun</p>
+            <span class="span-memberContent">生日：</span><br>
+            <span class="span-memberContent">興趣：</span><br>
+            <span class="span-memberContent">擅長：</span><br>
+            <span class="span-memberContent">夢想：</span>
+          </div>
+        </div>
       </div>
-      <div class="div-memberInfo">
-        <div class="div-infoDetail">
-
-        </div>
-        <div class="div-infoDetail">
-
-        </div>
-        <div class="div-infoDetail">
-
-        </div>
-        <div class="div-infoDetail">
-
-        </div>
-      </div>
+      <div class="clear"></div>
     </div>
-    <div class="clear"></div>
   @include("layouts.footer")
   <!-- 浮框 -->
   @include('modal')

@@ -1,45 +1,72 @@
-*{
-  box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
-.div-navWhiteBackGround{
-  background-color: white;
-  height: 70px;
-}
-.div-content{
-  width: 100%;
+html, body{
   background-color: #262829;
 }
-.div-oneMember{
-  width: 100%;
-  padding-top: 20px;
+.div-navWhiteBackGround {
+    background-color: white;
+    height: 70px;
 }
-.div-memberPic{
-  width: 100%;
-  float: left;
+.div-content {
+    width: 100%;
+    min-height: 100%;
+    background-color: #262829;
 }
-.div-memberInfo{
-  width: 100%;
-  float: left;
+.div-oneMember {
+    float: left;
+    width: 20%;
+    margin-left: 4%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding-top: 20px;
+    background-color: #262829;
 }
 .div-navBackground {
     opacity: 0.6;
 }
-.div-infoDetail{
-  width: 20%;
-  height: 200px;
-  float: left;
-  margin-left: 4%;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  background-color: white;
+.div-infoDetail {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* img */
+
+.img-memberPic {
+    width: 100%;
+    height: 359px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* p */
+.p-memberTitle{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* span */
+.span-memberContent{
+  font-size: 20px;
+}
+@media screen and (max-width: 900px) {
+  .div-oneMember {
+    width: 46%;
+    margin-left: 3%;
+  }
+}
+
+@media screen and (max-width: 768px) {
 
 }
-/* img */
-.img-memberPic{
-  width: 20%;
-  height: 359px;
-  float: left;
-  margin-left: 4%;
-  margin-bottom: 15px;
-  border-radius: 5px;
+
+@media screen and (max-width: 500px) {
+  .div-oneMember {
+    width: 90%;
+    margin-left: 5%;
+  }
 }
