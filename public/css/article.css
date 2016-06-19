@@ -1,7 +1,7 @@
 * { box-sizing: border-box; }
 
 /* force scrollbar */
-html { overflow-y: scroll; background-color: #abd2d5;}
+html { overflow-y: scroll;}
 
 body { font-family: sans-serif; }
 
@@ -48,6 +48,9 @@ figcaption{
   margin-top: 10px;
 }
 
+.div-navBackground {
+    opacity: 0.6;
+}
 @media screen and (max-width: 900px) {
   .grid-item {
     width: 33.3%;

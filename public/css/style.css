@@ -97,6 +97,7 @@ a:hover, a:focus {
     left: 0;
     background: #abd2d5;
     opacity: 0.2;
+    z-index: 6500;
 }
 .modal {
     z-index: 8000;

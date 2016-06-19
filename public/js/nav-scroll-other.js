@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $(window, document).scroll(function() {
         if ($(window).scrollTop() == 0) {
-            $(".navBackground").css('opacity','0.2');
+            $(".navBackground").css('opacity','0.6');
             $(".li-nav").css('color','white');
             $(".a-sub-nav").css('color', 'white');
         }

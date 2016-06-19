@@ -16,7 +16,9 @@ html{
   width: 50%;
   float: left;
 }
-
+.div-navBackground {
+    opacity: 0.6;
+}
 
 /* img */
 .img-memberPic{
