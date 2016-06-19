@@ -1,6 +1,6 @@
 <footer>
     <div class="div-footerLink">
-        <a href="#">
+        <a href="member">
             <div class="div-footerLinkContent"><span class="span-footerLink">組員</span></div>
         </a>
         <a href="#">
