@@ -12,6 +12,7 @@
     <script rel="text/javascript" src="{{ URL::asset('js/nav-slider.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/nav-scroll-other.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/masonry.pkgd.min.js') }}" ></script>
+    <script rel="text/javascript" src="{{ URL::asset('js/imagesloaded.pkgd.min.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/article.js') }}" ></script>
     <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}" />
