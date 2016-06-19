@@ -25,6 +25,7 @@ nav { top: 0px; }
 
 .grid-sizer,
 .grid-item {
+  /*width: 200px;*/
   width: 25%;
   padding: 10px;
 }
@@ -35,12 +36,16 @@ nav { top: 0px; }
 
 .grid-content {
   background-color: #72b2bd;
-  height: 300px;
+  padding: 10px;
 }
 
 .grid-item img {
   display: block;
   max-width: 100%;
+}
+
+figcaption{
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 900px) {
