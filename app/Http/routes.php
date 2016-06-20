@@ -24,6 +24,6 @@ Route::get("/member",function(){
 Route::get("/link",function(){
   return view('footer/link');
 });
-Route::get("/map",function(){
-  return view('footer/map');
+Route::get("/siteMap",function(){
+  return view('footer/siteMap');
 });

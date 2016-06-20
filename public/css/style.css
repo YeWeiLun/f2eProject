@@ -59,6 +59,7 @@ a:hover, a:focus {
     height: 90%;
     background-color: white;
     border-radius: 50%;
+    border: 3px solid white;
     z-index: 6000;
 }
 .img-more:hover, .img-more-2:hover, .img-more-3:hover, .img-more-4:hover, .img-more-5:hover {
