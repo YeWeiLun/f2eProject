@@ -43,30 +43,30 @@
           <img src="{{URL::asset('img/jeff.jpg')}}" class="img-memberPic" title="陳政皓"/>
           <div class="div-infoDetail">
               <p class="p-memberTitle">陳政皓 Jeff</p>
-              <span class="span-memberContent">生日：</span><br>
-              <span class="span-memberContent">興趣：</span><br>
-              <span class="span-memberContent">擅長：</span><br>
-              <span class="span-memberContent">夢想：</span>
+              <span class="span-memberContent">生日：9/7</span><br>
+              <span class="span-memberContent">興趣：開實況、聽音樂</span><br>
+              <span class="span-memberContent">擅長：C#</span><br>
+              <span class="span-memberContent">夢想：獨立開發遊戲</span>
           </div>
         </div>
         <div class="div-oneMember">
           <img src="{{URL::asset('img/weicheng.jpg')}}" class="img-memberPic" title="周韋丞"/>
           <div class="div-infoDetail">
             <p class="p-memberTitle">周韋丞 Wei-Cheng</p>
-            <span class="span-memberContent">生日：</span><br>
-            <span class="span-memberContent">興趣：</span><br>
-            <span class="span-memberContent">擅長：</span><br>
-            <span class="span-memberContent">夢想：</span>
+            <span class="span-memberContent">生日：2/3</span><br>
+            <span class="span-memberContent">興趣：吃吃吃</span><br>
+            <span class="span-memberContent">擅長：???</span><br>
+            <span class="span-memberContent">夢想：遺失在回家的路上</span>
           </div>
         </div>
         <div class="div-oneMember">
           <img src="{{URL::asset('img/weilun.jpg')}}" class="img-memberPic" title="葉偉倫"/>
           <div class="div-infoDetail">
             <p class="p-memberTitle">葉偉倫 Wei-Lun</p>
-            <span class="span-memberContent">生日：</span><br>
-            <span class="span-memberContent">興趣：</span><br>
-            <span class="span-memberContent">擅長：</span><br>
-            <span class="span-memberContent">夢想：</span>
+            <span class="span-memberContent">生日：5/23</span><br>
+            <span class="span-memberContent">興趣：解謎</span><br>
+            <span class="span-memberContent">擅長：C#</span><br>
+            <span class="span-memberContent">夢想：???</span>
           </div>
         </div>
       </div>

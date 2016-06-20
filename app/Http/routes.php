@@ -21,3 +21,6 @@ Route::get("/article","ArticleController@article");
 Route::get("/member",function(){
   return view('member/member');
 });
+Route::get("/link",function(){
+  return view('link/link');
+});
