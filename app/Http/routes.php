@@ -19,8 +19,11 @@ Route::get("/sign_up","UserController@signUp");
 Route::Post("/createUser","UserController@createUser");
 Route::get("/article","ArticleController@article");
 Route::get("/member",function(){
-  return view('member/member');
+  return view('footer/member');
 });
 Route::get("/link",function(){
-  return view('link/link');
+  return view('footer/link');
+});
+Route::get("/map",function(){
+  return view('footer/map');
 });
