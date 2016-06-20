@@ -28,7 +28,10 @@
   <!-- Content -->
   <div class="div-navWhiteBackGround"></div>
   <div class="div-content">
-
+    <div class="div-mapZone">
+      <a href="article"><span class="span-mapTitle">文章</span></a>
+      <hr>
+    </div>
   </div>
   @include("layouts.footer")
   <!-- 浮框 -->
