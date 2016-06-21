@@ -24,7 +24,11 @@
               @endif
           </a>
           <a href="#" class="a-nav">
-              <li id="a-work" class="li-nav">作品分享</li>
+            @if(Session::has('user'))
+              @include('creationDropDownMenu')
+            @else
+              <li class="li-nav">相關創作</li>
+            @endif
           </a>
           <a href="#" class="a-nav">
               @if(Session::has('user'))
