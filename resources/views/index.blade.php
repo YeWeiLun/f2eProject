@@ -42,10 +42,10 @@
           <a href="#"><img src="{{URL::asset('img/Metal.png')}}" class="img-more-2" title="金屬類"  data="{{URL::asset('img/MetalRecyle.jpg')}}"/></a></div>
         <div class="div-category-2">
           <a href="#"><img src="{{URL::asset('img/Paper.png')}}" class="img-more-3" title="紙類"  data="{{URL::asset('img/PaperRecyle.jpg')}}"/></a></div>
-        <div class="div-category-2">
+        <div class="div-category-2 div-category-3">
           <a href="#"><a href="#"><img src="{{URL::asset('img/Glass.png')}}" class="img-more-4" title="玻璃類"  data="{{URL::asset('img/GlassRecyle.jpg')}}"/></a></div>
-        <div class="div-category-2">
-          <a href="#"><a href="#"><img src="{{URL::asset('img/Cloth.png')}}" class="img-more-5" title="衣料類"  data="{{URL::asset('img/ClothRecyle.jpg')}}"/></a></div>
+        <div class="div-category-2 div-category-3">
+          <a href="#"><a href="#"><img src="{{URL::asset('img/Cloth.png')}}" class="img-more-5" title="衣料類 "  data="{{URL::asset('img/ClothRecyle.jpg')}}"/></a></div>
     </div>
 
     <div class="clear"></div>
