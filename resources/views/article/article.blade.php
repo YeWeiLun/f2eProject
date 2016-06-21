@@ -29,7 +29,8 @@
   @include("layouts.navbar")
   <!-- Content -->
   <section>
-
+    <div class="div-navWhiteBackGround"></div>
+  @include("article.articleCatalogue")
     <div class="grid">
       @foreach ($articleList as $article)
         @include("article.articleGrid")

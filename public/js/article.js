@@ -13,6 +13,9 @@ $(document).ready(function() {
     // columnWidth: 200
   });
   });
+	$(".catalogue-list").change(function(){
+		this.form.submit();
+	})
 });
 // layout Isotope after each image loads
 // $grid.imagesLoaded().progress( function() {
