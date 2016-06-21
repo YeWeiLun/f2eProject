@@ -7,4 +7,7 @@ $(document).ready(function(){
   $('.dropdown-toggle').on('click', function(){
     $('.dropdown-menu').toggleClass('in');
   })
+  $('#article-dropdown-btn').on('click', function(){
+    $('#a-work').toggleClass('slider-down');
+  })
 });
