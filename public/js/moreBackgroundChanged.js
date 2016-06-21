@@ -4,6 +4,7 @@ $(document).ready(function(){
     $('.div-more').css('background-image',"url("+$(this).attr('data')+")");
   });
   $(".div-category,.div-category-2,.div-category-3").click(function(){
+    history.pushState("", "New Title", "/article");
     $.ajax({
       url: 'article',
       type:'post',
@@ -14,7 +15,7 @@ $(document).ready(function(){
       },
       success:function(resp){
         $('body').html(resp);
-        document.URL += 'article';
+
       }
 
     })
