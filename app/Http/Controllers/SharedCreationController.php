@@ -67,6 +67,7 @@ class SharedCreationController extends Controller
     {
       $title=$req->input('title');
       $pic=$req->input('scPic');
+      $pic=$this->imgurUrl($this->pic);
       $content=$req->input('content');
       $cid = $req->input('catalogue');
       $youtubeUrl = $this->formYoutubeUrl($req->input('youtubeUrl'));
@@ -87,6 +88,15 @@ class SharedCreationController extends Controller
     function formYoutubeUrl($url)
     {
       $result = str_replace("https://www.youtube.com/watch?v=","",$url);
+      return $result;
+    }
+
+    function imgurUrl($url)
+    {
+      $result = $url;
+      if (preg_match('/http:\/\/imgur.com/',$url) && !preg_match('/.png?1/',$url) ) {
+        $result .= '.png?1';
+      }
       return $result;
     }
 }

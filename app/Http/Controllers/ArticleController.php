@@ -67,13 +67,13 @@ class ArticleController extends Controller
     {
       $title=$req->input('title');
       $picUrl=$req->input('articlePic');
-      $picUrl = imgurUrl($picUrl);
+      $picUrl = $this->imgurUrl($picUrl);
       $content=$req->input('content');
       $cid = $req->input('catalogue');
       $account = Session::get('user')[0]['acc'];
       $user = $this->userModel->get(['account'=>$account])[0];
-      $data = array('uid'=>$user->uid,'title'=>$title,'articlePic'=>$pic,'content'=>$content,'cid'=>$cid);
-      if(strlen($title)>0&&strlen($pic)>0&&strlen($content)>0)
+      $data = array('uid'=>$user->uid,'title'=>$title,'articlePic'=>$picUrl,'content'=>$content,'cid'=>$cid);
+      if(strlen($title)>0&&strlen($picUrl)>0&&strlen($content)>0)
       {
         $this->model->insert($data);
       }
@@ -86,8 +86,8 @@ class ArticleController extends Controller
 
     function imgurUrl($url)
     {
-      $result =$url;
-      if (strpos($url, "http://imgur.com") !== false && strpos($url, ".png?1") ==true ) {
+      $result = $url;
+      if (preg_match('/http:\/\/imgur.com/',$url) && !preg_match('/.png?1/',$url) ) {
         $result .= '.png?1';
       }
       return $result;
