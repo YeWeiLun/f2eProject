@@ -41,8 +41,10 @@
     </div>
     <div class="div-textArea input-group">
       {{Form::label('分　　類','分　　類',array('class'=>'input-group-addon'))}}
-      <div class = 'form-control'>
-        @include("article.articleCatalogue")
+      <div class = "form-control">
+        <div class="div-left">
+          @include("article.articleCatalogue")
+        </div>
       </div>
     </div>
     <div class="div-textArea input-group">
