@@ -1,4 +1,4 @@
-<a href = "/article/{{$article->tid}}">
+<a href = "{{ url('/article/{{$article->tid}') }}">
   <div class="grid-item">
     <div class="grid-content">
       <img src="{{$article->articlePic}}" alt>
