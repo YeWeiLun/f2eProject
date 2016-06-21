@@ -43,6 +43,9 @@ html, body{
   height: 50px;
   margin-top: 5px;
 }
+.img-fb:hover{
+  opacity: 0.5;
+}
 
 /* p */
 .p-memberTitle{
