@@ -5,7 +5,9 @@ hr {
     margin-top: 5px;
     margin-bottom: 5px;
 }
-
+.a-articleTurn{
+  cursor: pointer;
+}
 /* div */
 
 .div-content {

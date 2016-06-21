@@ -12,6 +12,7 @@
     <script rel="text/javascript" src="{{ URL::asset('js/nav-slider.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/nav-scroll-other.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/masonry.pkgd.min.js') }}" ></script>
+    <script rel="text/javascript" src="{{ URL::asset('js/siteMap.js') }}" ></script>
     <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/navbar.css') }}" />
@@ -31,15 +32,18 @@
     <div class="div-mapZone">
       <a href="article"><span class="span-mapTitle">文章〉</span></a>
       <hr>
-      <a href="#"><span class="span-mapContent">塑膠類</span></a>
+      <div class='div-page-switch'>
+        {{Form::open(array('action'=>'ArticleController@getArticleListByCatalogue'))}}
+      </div>
+      <a href="#" data-url="1" class="a-articleTurn"><span class="span-mapContent" >塑膠類</span></a>
       <br>
-      <a href="#"><span class="span-mapContent">金屬類</span></a>
+      <a href="#" data-url="2" class="a-articleTurn"><span class="span-mapContent">金屬類</span></a>
       <br>
-      <a href="#"><span class="span-mapContent">紙類</span></a>
+      <a href="#" data-url="3" class="a-articleTurn"><span class="span-mapContent">紙類</span></a>
       <br>
-      <a href="#"><span class="span-mapContent">玻璃類</span></a>
+      <a href="#" data-url="4" class="a-articleTurn"><span class="span-mapContent">玻璃類</span></a>
       <br>
-      <a href="#"><span class="span-mapContent">衣料類</span></a>
+      <a href="#" data-url="5" class="a-articleTurn"><span class="span-mapContent">衣料類</span></a>
       <br>
     </div>
     <div class="div-mapZone">
