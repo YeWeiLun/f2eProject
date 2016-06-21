@@ -24,7 +24,7 @@
               @endif
           </a>
           <a href="#" class="a-nav">
-              <li class="li-nav">作品分享</li>
+              <li id="a-work" class="li-nav">作品分享</li>
           </a>
           <a href="#" class="a-nav">
               @if(Session::has('user'))

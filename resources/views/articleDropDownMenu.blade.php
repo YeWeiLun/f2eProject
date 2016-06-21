@@ -1,5 +1,5 @@
 <div class="btn-group">
-  <a class="dropdown-toggle clear-shadow li-nav" data-toggle="dropdown" href="#">
+  <a class="dropdown-toggle clear-shadow li-nav" id="article-dropdown-btn" data-toggle="dropdown" href="#">
     文章<span class="caret"></span>
   </a>
 
