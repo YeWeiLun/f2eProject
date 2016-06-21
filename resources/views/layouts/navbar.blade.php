@@ -30,7 +30,7 @@
               @if(Session::has('user'))
                 @include('userDropDownMenu')
               @else
-                <li class="li-nav func-login" data-url="{{ url('/').'sign_in' }}">登入</li>
+                <li class="li-nav func-login" data-url="{{ url('/').'/sign_in' }}">登入</li>
               @endif
           </a>
       </ul>
