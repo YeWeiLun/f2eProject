@@ -55,32 +55,38 @@ class SharedCreationController extends Controller
       $result = str_replace("\r","<br>",$result);
       return $result;
     }
-    //
-    // function addArticle()
-    // {
-    //   $catalogueList =$this->catalogueModel->all();
-    //   $selectedCid = 0;
-    //   return View::make("/article/addArticle",compact('catalogueList','selectedCid'));
-    // }
-    //
-    // function newArticle(Request $req)
-    // {
-    //   $title=$req->input('title');
-    //   $pic=$req->input('articlePic');
-    //   $content=$req->input('content');
-    //   $cid = $req->input('catalogue');
-    //   $account = Session::get('user')[0]['acc'];
-    //   $user = $this->userModel->get(['account'=>$account])[0];
-    //   $data = array('uid'=>$user->uid,'title'=>$title,'articlePic'=>$pic,'content'=>$content,'cid'=>$cid);
-    //   if(strlen($title)>0&&strlen($pic)>0&&strlen($content)>0)
-    //   {
-    //     $this->model->insert($data);
-    //   }
-    //   else
-    //   {
-    //     Session::flash("notice","請正確輸入文章資料");
-    //   }
-    //   return redirect('');
-    //
-    // }
+
+    function addCreation()
+    {
+      $catalogueList =$this->catalogueModel->all();
+      $selectedCid = 0;
+      return View::make("/creation/addCreation",compact('catalogueList','selectedCid'));
+    }
+
+    function newCreation(Request $req)
+    {
+      $title=$req->input('title');
+      $pic=$req->input('scPic');
+      $content=$req->input('content');
+      $cid = $req->input('catalogue');
+      $youtubeUrl = $this->formYoutubeUrl($req->input('youtubeUrl'));
+      $account = Session::get('user')[0]['acc'];
+      $user = $this->userModel->get(['account'=>$account])[0];
+      $data = array('uid'=>$user->uid,'title'=>$title,'scPic'=>$pic,'content'=>$content,'cid'=>$cid,'youtubeUrl'=>$youtubeUrl);
+      if(strlen($title)>0&&strlen($pic)>0&&strlen($content)>0&&strlen($youtubeUrl)>0)
+      {
+        $this->model->insert($data);
+      }
+      else
+      {
+        Session::flash("notice","請正確輸入分享資料");
+      }
+      return redirect('');
+    }
+
+    function formYoutubeUrl($url)
+    {
+      $result = str_replace("https://www.youtube.com/watch?v=","",$url);
+      return $result;
+    }
 }

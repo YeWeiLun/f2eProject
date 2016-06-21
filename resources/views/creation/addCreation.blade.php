@@ -30,22 +30,26 @@
   <div class="div-navWhiteBackGround"></div>
 
   <div class="div-content">
-{{Form::open(array('action'=>'ArticleController@newArticle'))}}
+{{Form::open(array('action'=>'SharedCreationController@newCreation'))}}
     <div class="div-textArea input-group">
       {{Form::label('標　　題','標　　題',array('class'=>'input-group-addon'))}}
       {{Form::text('title','',array('class'=>'form-control'))}}
     </div>
     <div class="div-textArea input-group">
       {{Form::label('封面圖片','封面圖片',array('class'=>'input-group-addon'))}}
-      {{Form::text('articlePic','',array('class'=>'form-control'))}}
+      {{Form::text('scPic','',array('class'=>'form-control'))}}
     </div>
     <div class="div-textArea input-group">
       {{Form::label('分　　類','分　　類',array('class'=>'input-group-addon'))}}
       <div class = "form-control">
         <div class="div-left">
-          @include("article.articleCatalogue")
+          @include("creation.creationCatalogue")
         </div>
       </div>
+    </div>
+    <div class="div-textArea input-group">
+      {{Form::label('Youtube影片','Youtube影片',array('class'=>'input-group-addon'))}}
+      {{Form::text('youtubeUrl','',array('class'=>'form-control'))}}
     </div>
     <div class="div-textArea input-group">
       {{Form::label('內　　文','內　　文',array('class'=>'input-group-addon'))}}

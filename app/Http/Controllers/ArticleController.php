@@ -66,7 +66,8 @@ class ArticleController extends Controller
     function newArticle(Request $req)
     {
       $title=$req->input('title');
-      $pic=$req->input('articlePic');
+      $picUrl=$req->input('articlePic');
+      $picUrl = imgurUrl($picUrl);
       $content=$req->input('content');
       $cid = $req->input('catalogue');
       $account = Session::get('user')[0]['acc'];
@@ -81,6 +82,14 @@ class ArticleController extends Controller
         Session::flash("notice","請正確輸入文章資料");
       }
       return redirect('');
+    }
 
+    function imgurUrl($url)
+    {
+      $result =$url;
+      if (strpos($url, "http://imgur.com") !== false && strpos($url, ".png?1") ==true ) {
+        $result .= '.png?1';
+      }
+      return $result;
     }
 }
