@@ -9,14 +9,14 @@
       	</div>
       </button>
     </div>
-    <a href="./"><img src="{{URL::asset('img/logo.png')}}" class="img-logo" /></a>
+    <a href="{{ url('/') }}"><img src="{{URL::asset('img/logo.png')}}" class="img-logo" /></a>
 
     <div class="nav-div">
       <ul class="ul-nav">
-          <a href="./" class="a-nav">
+          <a href="{{ url('/') }}" class="a-nav">
               <li class="li-nav">Home</li>
           </a>
-          <a href="article" class="a-nav">
+          <a href="{{ url('/article') }}" class="a-nav">
               @if(Session::has('user'))
                 @include('articleDropDownMenu')
               @else
@@ -30,7 +30,7 @@
               @if(Session::has('user'))
                 @include('userDropDownMenu')
               @else
-                <li class="li-nav func-login" data-url="sign_in">登入</li>
+                <li class="li-nav func-login" data-url="{{ url('/').'sign_in' }}">登入</li>
               @endif
           </a>
       </ul>
