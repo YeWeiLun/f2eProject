@@ -4,7 +4,7 @@ $(document).ready(function(){
     $('.div-more').css('background-image',"url("+$(this).attr('data')+")");
   });
   $(".div-category,.div-category-2,.div-category-3").click(function(){
-    history.pushState("", "New Title", "/article");
+    history.pushState("", "New Title", document.location+"article");
     $.ajax({
       url: 'article',
       type:'post',
