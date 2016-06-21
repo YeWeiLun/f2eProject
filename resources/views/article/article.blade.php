@@ -35,31 +35,6 @@
       @foreach ($articleList as $article)
         @include("article.articleGrid")
       @endforeach
-      <div class="grid-item">
-        <div class="grid-content">
-          <img src="{{URL::asset('img/test/cinderella.jpg')}}" alt>
-          <figcaption>Rapunzel, clothed in 1820’s period fashion</figcaption>
-        </div>
-      </div>
-      <div class="grid-item">
-        <div class="grid-content">
-            <img src="{{URL::asset('img/test/ariel.jpg')}}" alt>
-            <figcaption>Rapunzel, clothed in 1820’s period fashion</figcaption>
-        </div>
-      </div>
-      <div class="grid-item">
-        <div class="grid-content">
-          <img src="{{URL::asset('img/test/mulan_2.jpg')}}" alt>
-          <figcaption>Rapunzel, clothed in 1820’s period fashion</figcaption>
-        </div>
-      </div>
-
-      <div class="grid-item">
-        <div class="grid-content">
-          <img src="{{URL::asset('img/test/pocahontas_2.jpg')}}" alt>
-          <figcaption>Rapunzel, clothed in 1820’s period fashion</figcaption>
-        </div>
-      </div>
     </div>
   </section>
   @include("layouts.footer")

@@ -35,17 +35,21 @@
                   <div class="div-moreBtn">了解更多</div>
                 </a>
     </div>
+    <div class='div-page-switch'>
+      {{Form::open(array('action'=>'ArticleController@getArticleListByCatalogue'))}}
+        <input id="catalogue" name ='catalogue' type ='hidden' value=0>
+    </div>
     <div id="more" class="div-more">
-        <div class="div-category">
-          <a href="#"><img src="{{URL::asset('img/Plastic.png')}}" class="img-more" title="塑膠類" data="{{URL::asset('img/PlasticRecyle.jpg')}}"/></a></div>
-        <div class="div-category-2">
-          <a href="#"><img src="{{URL::asset('img/Metal.png')}}" class="img-more-2" title="金屬類"  data="{{URL::asset('img/MetalRecyle.jpg')}}"/></a></div>
-        <div class="div-category-2">
-          <a href="#"><img src="{{URL::asset('img/Paper.png')}}" class="img-more-3" title="紙類"  data="{{URL::asset('img/PaperRecyle.jpg')}}"/></a></div>
-        <div class="div-category-2 div-category-3">
-          <a href="#"><a href="#"><img src="{{URL::asset('img/Glass.png')}}" class="img-more-4" title="玻璃類"  data="{{URL::asset('img/GlassRecyle.jpg')}}"/></a></div>
-        <div class="div-category-2 div-category-3">
-          <a href="#"><a href="#"><img src="{{URL::asset('img/Cloth.png')}}" class="img-more-5" title="衣料類 "  data="{{URL::asset('img/ClothRecyle.jpg')}}"/></a></div>
+        <div class="div-category" data-url="1">
+          <img src="{{URL::asset('img/Plastic.png')}}" class="img-more" title="塑膠類" data="{{URL::asset('img/PlasticRecyle.jpg')}}"/></div>
+        <div class="div-category-2" data-url="2">
+        <img src="{{URL::asset('img/Metal.png')}}" class="img-more-2" title="金屬類"  data="{{URL::asset('img/MetalRecyle.jpg')}}"/></div>
+        <div class="div-category-2" data-url="3">
+          <img src="{{URL::asset('img/Paper.png')}}" class="img-more-3" title="紙類"  data="{{URL::asset('img/PaperRecyle.jpg')}}"/></div>
+        <div class="div-category-2 div-category-3" data-url="4">
+          <img src="{{URL::asset('img/Glass.png')}}" class="img-more-4" title="玻璃類"  data="{{URL::asset('img/GlassRecyle.jpg')}}"/></div>
+        <div class="div-category-2 div-category-3" data-url="5">
+          <img src="{{URL::asset('img/Cloth.png')}}" class="img-more-5" title="衣料類 "  data="{{URL::asset('img/ClothRecyle.jpg')}}"/></div>
     </div>
 
     <div class="clear"></div>
