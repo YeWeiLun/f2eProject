@@ -20,6 +20,9 @@ Route::Post("/createUser","UserController@createUser");
 Route::get("/article","ArticleController@article");
 Route::Post("/article","ArticleController@getArticleListByCatalogue");
 Route::get("/article/{id}","ArticleController@getArticle");
+Route::get("/addArticle",function(){
+  return view('article/addArticle');
+});
 Route::get("/member",function(){
   return view('footer/member');
 });

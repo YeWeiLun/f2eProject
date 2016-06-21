@@ -37,7 +37,6 @@
     </div>
     <div class='div-page-switch'>
       {{Form::open(array('action'=>'ArticleController@getArticleListByCatalogue'))}}
-        <input id="catalogue" name ='catalogue' type ='hidden' value=0>
     </div>
     <div id="more" class="div-more">
         <div class="div-category" data-url="1">

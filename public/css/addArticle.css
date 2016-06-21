@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+.input-content{
+  height: 300px;
+}
+/* div */
+
+.div-content {
+    width: 100%;
+    padding: 15px;
+    background-color: #262829;
+}
+.div-navBackground {
+    opacity: 0.6;
+}
+.div-textArea{
+  background-color: white;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+}
