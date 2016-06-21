@@ -4,13 +4,12 @@
   </a>
 
   <ul class="dropdown-menu">
-    <a class="a-sub-nav" href="addCreation" tabindex="-1">
-      <li class="li-nav">分享創作</li>
-    </a>
-    <a class="a-sub-nav subnav-bot" href="{{ url('/creation') }}" tabindex="-1">
-      <li class="li-nav">相關創作</li>
-    </a>
-
+    <li class="li-nav">
+      <a class="a-sub-nav" href="addCreation" tabindex="-1">分享創作</a>
+    </li>
+    <li class="li-nav">
+      <a class="a-sub-nav subnav-bot" href="{{ url('/creation') }}" tabindex="-1">相關創作</a>
+    </li>
     <div class="div-dropdown-background-3 navBackground"></div>
   </ul>
 </div>
