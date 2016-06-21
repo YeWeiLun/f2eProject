@@ -18,6 +18,7 @@ Route::get("/sign_in","UserController@signIn");
 Route::get("/sign_up","UserController@signUp");
 Route::Post("/createUser","UserController@createUser");
 Route::get("/article","ArticleController@article");
+Route::get("/article/{id}","ArticleController@getArticle");
 Route::get("/member",function(){
   return view('footer/member');
 });

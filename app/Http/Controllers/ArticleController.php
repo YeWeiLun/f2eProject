@@ -17,7 +17,12 @@ class ArticleController extends Controller
 
     function article()
     {
-      return View::make("/article/article");
+      $articleList = $this->model->all();
+      return View::make("/article/article",compact('articleList'));
     }
 
+    function getArticle($aid)
+    {
+      var_dump($aid);
+    }
 }

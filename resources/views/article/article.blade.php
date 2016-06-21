@@ -29,7 +29,11 @@
   @include("layouts.navbar")
   <!-- Content -->
   <section>
+
     <div class="grid">
+      @foreach ($articleList as $article)
+        @include("article.articleGrid")
+      @endforeach
       <div class="grid-item">
         <div class="grid-content">
           <img src="{{URL::asset('img/test/cinderella.jpg')}}" alt>
