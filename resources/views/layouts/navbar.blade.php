@@ -17,7 +17,11 @@
               <li class="li-nav">Home</li>
           </a>
           <a href="article" class="a-nav">
-              <li class="li-nav">文章</li>
+              @if(Session::has('user'))
+                @include('articleDropDownMenu')
+              @else
+                <li class="li-nav">相關文章</li>
+              @endif
           </a>
           <a href="#" class="a-nav">
               <li class="li-nav">作品分享</li>

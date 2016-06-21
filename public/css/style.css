@@ -308,9 +308,27 @@ a:hover, a:focus {
     color: inherit;
   }
 
+  #subnav-article {
+    padding-top: 0px;
+  }
+
   .div-dropdown-background-1 {
       width: 160px;
       height: 101px;
+      position: fixed;
+      top: 70px;
+      right: 0;
+      background: #abd2d5;
+      opacity: 0.2;
+      z-index: -100;
+      border: 1px solid #8e8e8e;
+      border-radius: 3px;
+  }
+
+  .div-dropdown-background-2 {
+      width: 160px;
+      height: 101px;
+      margin-right: 228px;
       position: fixed;
       top: 70px;
       right: 0;
