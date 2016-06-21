@@ -11,6 +11,8 @@ nav { top: 0px; }
 
 .grid {
   background: white;
+  font-family: Calibri Light, Arial, 微軟正黑體, sans-serif;
+  font-size: 18px;
 }
 
 /* clear fix */
@@ -36,6 +38,7 @@ nav { top: 0px; }
 .grid-content {
   background-color: #72b2bd;
   padding: 10px;
+  border-radius: 5px;
 }
 
 .grid-item img {

@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $(".navBackground").css('opacity','0.6');
     $(window, document).scroll(function() {
         if ($(window).scrollTop() == 0) {
             $(".navBackground").css('opacity','0.6');
