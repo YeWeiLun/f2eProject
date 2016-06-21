@@ -182,12 +182,14 @@ a:hover, a:focus {
     width: 100%;
     height: 33%;
     text-align: center;
+    cursor:pointer;
 }
 .div-category-2 {
     width: 50%;
     height: 33%;
     float: left;
     text-align: center;
+    cursor:pointer;
 }
 .btn-group.open .dropdown-toggle {
     -webkit-box-shadow: none;

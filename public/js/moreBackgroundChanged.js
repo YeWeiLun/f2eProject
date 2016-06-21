@@ -10,13 +10,13 @@ $(document).ready(function(){
       data:
       {
         'catalogue':$(this).data('url'),
-        '_token':'c7ykXzsT4ZrTdB4QlncclpXmZ0LWdGFNuWVp3Rwe'
+        '_token':$("input[name='_token']").val()
       },
       success:function(resp){
         $('body').html(resp);
+        document.URL += 'article';
       }
 
     })
   });
-  $("#catalogue").bind("change",function(){console.log(123);this.form.submit();})
 });
