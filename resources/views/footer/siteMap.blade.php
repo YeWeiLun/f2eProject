@@ -29,8 +29,51 @@
   <div class="div-navWhiteBackGround"></div>
   <div class="div-content">
     <div class="div-mapZone">
-      <a href="article"><span class="span-mapTitle">文章</span></a>
+      <a href="article"><span class="span-mapTitle">文章〉</span></a>
       <hr>
+      <a href="#"><span class="span-mapContent">塑膠類</span></a>
+      <br>
+      <a href="#"><span class="span-mapContent">金屬類</span></a>
+      <br>
+      <a href="#"><span class="span-mapContent">紙類</span></a>
+      <br>
+      <a href="#"><span class="span-mapContent">玻璃類</span></a>
+      <br>
+      <a href="#"><span class="span-mapContent">衣料類</span></a>
+      <br>
+    </div>
+    <div class="div-mapZone">
+      <a href="article"><span class="span-mapTitle">作品分享〉</span></a>
+      <hr>
+      <a href="#"><span class="span-mapContent">+新增貼文</span></a>
+      <br>
+      <a href="#"><span class="span-mapContent">塑膠類</span></a>
+      <br>
+      <a href="#"><span class="span-mapContent">金屬類</span></a>
+      <br>
+      <a href="#"><span class="span-mapContent">紙類</span></a>
+      <br>
+      <a href="#"><span class="span-mapContent">玻璃類</span></a>
+      <br>
+      <a href="#"><span class="span-mapContent">衣料類</span></a>
+      <br>
+      <hr>
+    </div>
+    <div class="div-mapZone">
+      <span class="span-mapTitleNoLink">個人設定</span>
+      <hr>
+      <a href="#"><span class="span-mapContent func-login" data-url="sign_in">登入</span></a>
+      <br>
+    </div>
+    <div class="div-mapZone">
+      <span class="span-mapTitleNoLink">站務</span>
+      <hr>
+      <a href="member"><span class="span-mapContent">關於我們</span></a>
+      <br>
+      <a href="link"><span class="span-mapContent">相關連結</span></a>
+      <br>
+      <a href="siteMap"><span class="span-mapContent">網站地圖</span></a>
+      <br>
     </div>
   </div>
   @include("layouts.footer")

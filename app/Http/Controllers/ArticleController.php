@@ -24,6 +24,10 @@ class ArticleController extends Controller
     function getArticle($tid)
     {
       $article = $this->model->get(["tid"=>$tid])[0];
+      $myContent = str_replace("\r\n","<br>",$article->content);
+      $myContent = str_replace("\n","<br>",$myContent);
+      $myContent = str_replace("\r","<br>",$myContent);
+      $article->content = $myContent;
       return View::make("/article/articleDetail",compact('article'));
     }
 }
