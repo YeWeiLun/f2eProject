@@ -30,13 +30,13 @@ class SharedCreationController extends Controller
       return View::make("/creation/creation",compact('creationList','catalogueList','selectedCid'));
     }
 
-    // function getArticle($tid)
-    // {
-    //   $article = $this->model->get(["tid"=>$tid])[0];
-    //   $article->content = $this->translateArticle($article->content);
-    //   return View::make("/article/articleDetail",compact('article'));
-    // }
-    //
+    function getCreation($scid)
+    {
+      $creation = $this->model->get(["scid"=>$scid])[0];
+      $creation->content = $this->translateCreation($creation->content);
+      return View::make("/creation/creationDetail",compact('creation'));
+    }
+
     function getByCatalogue(Request $req)
     {
       $selectedCid = $req->input('catalogue');
@@ -48,13 +48,13 @@ class SharedCreationController extends Controller
       return View::make("/creation/creation",compact('creationList','catalogueList','selectedCid'));
     }
     //
-    // function translateArticle($content)
-    // {
-    //   $result = str_replace("\r\n","<br>",$content);
-    //   $result = str_replace("\n","<br>",$result);
-    //   $result = str_replace("\r","<br>",$result);
-    //   return $result;
-    // }
+    function translateCreation($content)
+    {
+      $result = str_replace("\r\n","<br>",$content);
+      $result = str_replace("\n","<br>",$result);
+      $result = str_replace("\r","<br>",$result);
+      return $result;
+    }
     //
     // function addArticle()
     // {

@@ -4,12 +4,14 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 //API code載入後，取代id=player的div為帶有YouTube player的iframe tag
-var player = $("div[name='player']");
+var player = $("#player");
+
 function onYouTubeIframeAPIReady() {//此函數在IFrame Player API code 載入後將自動呼叫
+  var vId = $("#player").data('url');
  player = new YT.Player('player', {
    height: '390',
    width: '640',
-   videoId: $(player).data('url') //Youtube ID
+   videoId: vId //Youtube ID
  });
 }
 

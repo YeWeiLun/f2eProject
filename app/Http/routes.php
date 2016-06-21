@@ -26,6 +26,7 @@ Route::get("/addArticle","ArticleController@addArticle");
 
 Route::get("/creation","SharedCreationController@sharedCreation");
 Route::Post("/creation","SharedCreationController@getByCatalogue");
+Route::get("/creation/{id}","SharedCreationController@getCreation");
 
 Route::get("/member",function(){
   return view('footer/member');
