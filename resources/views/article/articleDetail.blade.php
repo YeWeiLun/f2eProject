@@ -17,7 +17,7 @@
     <script rel="text/javascript" src="{{ URL::asset('js/articleContent.js') }}" ></script>
     <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}" />
-    <link rel="stylesheet" href="{{ URL::asset('css/article.css') }}" />
+    <link rel="stylesheet" href="{{ URL::asset('css/articleContent.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/navbar.css') }}" />
     <link rel="shortcut icon" href="{{ URL::asset('img/favicon.ico') }}" />
 </head>
@@ -30,16 +30,15 @@
   @include("layouts.navbar")
   <!-- Content -->
   <div class="div-navWhiteBackGround"></div>
-
-  <section>
-      <h1>{{$article->title}}</h1>
-      <!-- <div class="fb-share-button" data-href="" data-layout="button_count" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">分享</a></div> -->
-      <div class="fb-like" data-href="{{$article->tid}}" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-      <div class='article-content'>
-        <?php echo $article->content ?>
+    <div class="div-content">
+      <div class="div-detail">
+        <h1>{{$article->title}}</h1>
+        <div class="fb-like" data-href="{{$article->tid}}" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+        <div class='article-content'>
+          <?php echo $article->content ?>
+        </div>
       </div>
-
-  </section>
+    </div>
   @include("layouts.footer")
 </body>
 </html>

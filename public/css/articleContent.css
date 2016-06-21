@@ -1,0 +1,19 @@
+/* div */
+.div-content{
+  width: 100%;
+  padding: 15px;
+  background-color: #262829;
+  font-family: Calibri Light, Arial, 微軟正黑體, sans-serif;
+}
+.div-detail {
+    width: 100%;
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+}
+.div-navBackground {
+    opacity: 0.6;
+}
+.article-content{
+  font-size: 20px;
+}
