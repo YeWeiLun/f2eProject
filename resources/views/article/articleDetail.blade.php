@@ -14,6 +14,7 @@
     <script rel="text/javascript" src="{{ URL::asset('js/masonry.pkgd.min.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/imagesloaded.pkgd.min.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/article.js') }}" ></script>
+    <script rel="text/javascript" src="{{ URL::asset('js/articleContent.js') }}" ></script>
     <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/article.css') }}" />
@@ -28,10 +29,13 @@
   <!-- 主選單 -->
   @include("layouts.navbar")
   <!-- Content -->
+  <div class="div-navWhiteBackGround"></div>
 
   <section>
       <h1>{{$article->title}}</h1>
-    {{$article->content}}
+      <div class='article-content'>
+        {{$article->content}}
+      </div>
 
   </section>
   @include("layouts.footer")
