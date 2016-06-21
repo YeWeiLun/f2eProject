@@ -21,8 +21,9 @@ class ArticleController extends Controller
       return View::make("/article/article",compact('articleList'));
     }
 
-    function getArticle($aid)
+    function getArticle($tid)
     {
-      var_dump($aid);
+      $article = $this->model->get(["tid"=>$tid])[0];
+      return View::make("/article/articleDetail",compact('article'));
     }
 }

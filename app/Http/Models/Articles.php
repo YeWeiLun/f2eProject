@@ -2,10 +2,10 @@
 
 namespace App\Http\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use App\Http\Models\MyModel as MyModel;
 use DB;
 
-class Articles extends Model
+class Articles extends MyModel
 {
     protected $table = 'Article';
 
