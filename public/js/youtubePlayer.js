@@ -8,9 +8,11 @@ var player = $("#player");
 
 function onYouTubeIframeAPIReady() {//此函數在IFrame Player API code 載入後將自動呼叫
   var vId = $("#player").data('url');
+  var wdth=$(window).width() - 90;
+  var heigh=wdth*2/3;
  player = new YT.Player('player', {
-   height: '390',
-   width: '640',
+   height: heigh,
+   width: wdth,
    videoId: vId //Youtube ID
  });
 }
