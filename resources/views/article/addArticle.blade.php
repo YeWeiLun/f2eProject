@@ -28,13 +28,21 @@
   <!-- Content -->
   <div class="div-navWhiteBackGround"></div>
   <div class="div-content">
+    {{Form::open(array('action'=>'UserController@loginUser'))}}
     <div class="div-textArea input-group">
-      <span class="input-group-addon">標題</span>
-      <input type="text" class="form-control"></input>
+      {{Form::label('標　　題','標　　題',array('class'=>'input-group-addon'))}}
+      {{Form::text('title','',array('class'=>'form-control'))}}
     </div>
     <div class="div-textArea input-group">
-      <span class="input-group-addon">內文</span>
-      <input type="text" class="form-control input-content"></input>
+      {{Form::label('封面圖片','封面圖片',array('class'=>'input-group-addon'))}}
+      {{Form::text('articlePic','',array('class'=>'form-control'))}}
+    </div>
+    <div class="div-textArea input-group">
+      {{Form::label('內　　文','內　　文',array('class'=>'input-group-addon'))}}
+      {{Form::textarea('articlePic','',array('class'=>'form-control'))}}
+    </div>
+    <div class="div-textArea input-group">
+      <input type='submit' class='input-group-addon form-control'>
     </div>
   </div>
   @include("layouts.footer")
