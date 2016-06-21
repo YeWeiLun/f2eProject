@@ -34,7 +34,7 @@
     <div class="div-content">
       <div class="div-detail">
         <h1>{{$creation->title}}</h1>
-        <div id='player' data-url='FzhvsW2wc_M'></div>
+        <div id='player' data-url='{{$creation->youtubeUrl}}'></div>
         <div class="fb-like" data-href="{{$creation->scId}}" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
         <div class='creation-content'>
           <?php echo $creation->content ?>
