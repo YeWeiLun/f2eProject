@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+/* div */
+
+.div-content {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #262829;
+}
+.div-navBackground {
+    opacity: 0.6;
+}
+.div-titleTexting{
+  background-color: white;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+}
