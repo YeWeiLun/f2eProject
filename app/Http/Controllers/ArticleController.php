@@ -29,7 +29,7 @@ class ArticleController extends Controller
     function getArticle($tid)
     {
       $article = $this->model->get(["tid"=>$tid])[0];
-      $aricle->content = $this->translateArticle($article->content);
+      $article->content = $this->translateArticle($article->content);
       return View::make("/article/articleDetail",compact('article'));
     }
 
