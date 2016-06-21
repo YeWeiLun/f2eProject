@@ -67,6 +67,12 @@
     font-size: 18px;
   }
 
+  nav .dropdown-menu>a li {
+    color: white;
+    padding: 10px 0 0 30px;
+    font-size: 18px;
+  }
+
   .slider-down {
     margin-top: 110px;
   }

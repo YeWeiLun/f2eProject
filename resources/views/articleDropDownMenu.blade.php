@@ -4,9 +4,9 @@
   </a>
 
   <ul class="dropdown-menu">
-    <li class="li-nav">
-      <a class="a-sub-nav" href="{{ url('/addArticle') }}" tabindex="-1">分享文章</a>
-    </li>
+      <a class="a-sub-nav" href="{{ url('/addArticle') }}" tabindex="-1">
+        <li class="li-nav">分享文章</li>
+      </a>
     <li class="li-nav">
       <a class="a-sub-nav subnav-bot" href="article" tabindex="-1">相關文章</a>
     </li>
