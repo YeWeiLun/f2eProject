@@ -48,6 +48,9 @@
       <a href="http://www.weimeixi.com/diy/jiuwugaizao/" target="_blank" title="http://www.weimeixi.com/diy/jiuwugaizao/">
           <span class="span-linkTitle">► 唯美系-舊物改造</span>
       </a><br><br>
+      <a href="http://eryunews.com/category/%E7%92%B0%E4%BF%9D/" target="_blank" title="http://eryunews.com/category/%E7%92%B0%E4%BF%9D/">
+          <span class="span-linkTitle">► 耳語新聞-環保</span>
+      </a><br><br>
       <a href="http://www.miuon.com/news/?list_1.html" target="_blank">
           <span class="span-linkTitle">► 妙生活-舊物改造</span>
       </a><br>
