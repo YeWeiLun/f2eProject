@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width; initial-scale=1 user-scalable=0">
     <script rel="text/javascript" src="{{ URL::asset('js/jquery-1.12.3.min.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/fb-jssdk.js') }}" ></script>
+
     <script rel="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/login.js') }}" ></script>
     <script rel="text/javascript" src="{{ URL::asset('js/nav-slider.js') }}" ></script>

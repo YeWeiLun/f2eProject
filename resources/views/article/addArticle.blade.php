@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Bang Bang Bang</title>
@@ -20,15 +19,18 @@
 </head>
 
 <body>
+
   @if (Session::has("notice"))
     {{Session::get("notice")}}
   @endif
+
   <!-- 主選單 -->
   @include("layouts.navbar")
   <!-- Content -->
   <div class="div-navWhiteBackGround"></div>
+
   <div class="div-content">
-    {{Form::open(array('action'=>'UserController@loginUser'))}}
+{{Form::open(array('action'=>'ArticleController@newArticle'))}}
     <div class="div-textArea input-group">
       {{Form::label('標　　題','標　　題',array('class'=>'input-group-addon'))}}
       {{Form::text('title','',array('class'=>'form-control'))}}
@@ -38,15 +40,20 @@
       {{Form::text('articlePic','',array('class'=>'form-control'))}}
     </div>
     <div class="div-textArea input-group">
+      {{Form::label('分　　類','分　　類',array('class'=>'input-group-addon'))}}
+      <div class = 'form-control'>
+        @include("article.articleCatalogue")
+      </div>
+    </div>
+    <div class="div-textArea input-group">
       {{Form::label('內　　文','內　　文',array('class'=>'input-group-addon'))}}
-      {{Form::textarea('articlePic','',array('class'=>'form-control'))}}
+      {{Form::textarea('content','',array('class'=>'form-control'))}}
     </div>
     <div class="div-textArea input-group">
       <input type='submit' class='input-group-addon form-control'>
     </div>
+  {{Form::close()}}
   </div>
   @include("layouts.footer")
-  <!-- 浮框 -->
-  @include('modal')
 </body>
 </html>

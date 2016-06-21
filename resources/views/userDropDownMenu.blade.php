@@ -10,6 +10,7 @@
     <li class="li-nav">
       {{Form::open(array('action'=>'UserController@logout'))}}
       <a class="a-sub-nav" tabindex="-1" onclick="$(this).parent('form').submit();">登出</a>
+      {{Form::close()}}
     </li>
     <div class="div-dropdown-background-1 navBackground"></div>
   </ul>
