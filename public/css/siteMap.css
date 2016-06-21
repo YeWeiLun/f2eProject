@@ -17,20 +17,28 @@ hr {
 .div-mapZone {
     width: 90%;
     margin-left: 5%;
+    margin-bottom: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: white;
-    border-radius: 5px;
     padding-left: 10px;
     padding-right: 10px;
+    background-color: white;
+    border-radius: 5px;
 }
 .div-navBackground {
     opacity: 0.6;
 }
 
 /* span*/
-.span-mapTitle{
+.span-mapTitle,.span-mapTitleNoLink{
   font-weight: bold;
   font-size: 25px;
+  color: black;
+}
+.span-mapTitle:hover, .span-mapContent:hover{
+  color: #56d0dd;
+}
+.span-mapContent{
+  font-size: 20px;
   color: black;
 }

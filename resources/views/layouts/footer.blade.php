@@ -1,7 +1,7 @@
 <footer>
     <div class="div-footerLink">
         <div class="div-footerLinkContent">
-          <a href="member"><span class="span-footerLink">組員</span></a>
+          <a href="member"><span class="span-footerLink">關於我們</span></a>
         </div>
         <div class="div-footerLinkContent">
           <a href="link"><span class="span-footerLink">相關連結</span></a>
