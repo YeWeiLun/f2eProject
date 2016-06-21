@@ -8,6 +8,14 @@ $(document).ready(function(){
     $('.dropdown-menu').toggleClass('in');
   })
   $('#article-dropdown-btn').on('click', function(){
-    $('#a-work').toggleClass('slider-down');
+    if($(window).width() <= 767) {
+      $('#a-work').toggleClass('slider-down');
+    }
   })
+  $(document).ready(function(){
+    $(window).resize(function() {
+      $("div.open").removeClass('open');
+      $('#a-work').removeClass('slider-down');
+    });
+});
 });
