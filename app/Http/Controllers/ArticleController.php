@@ -21,7 +21,9 @@ class ArticleController extends Controller
     function article()
     {
       $articleList = $this->model->all();
-      return View::make("/article/article",compact('articleList'));
+      $catalogueList =$this->catalogueModel->all();
+      $selectedCid = 0;
+      return View::make("/article/article",compact('articleList','catalogueList','selectedCid'));
     }
 
     function getArticle($tid)
