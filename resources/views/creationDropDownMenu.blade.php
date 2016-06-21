@@ -7,9 +7,10 @@
     <a class="a-sub-nav" href="addCreation" tabindex="-1">
       <li class="li-nav">分享創作</li>
     </a>
-    <li class="li-nav">
-      <a class="a-sub-nav subnav-bot" href="{{ url('/creation') }}" tabindex="-1">相關創作</a>
-    </li>
+    <a class="a-sub-nav subnav-bot" href="{{ url('/creation') }}" tabindex="-1">
+      <li class="li-nav">相關創作</li>
+    </a>
+
     <div class="div-dropdown-background-3 navBackground"></div>
   </ul>
 </div>

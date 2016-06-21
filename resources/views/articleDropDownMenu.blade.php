@@ -7,9 +7,9 @@
       <a class="a-sub-nav" href="{{ url('/addArticle') }}" tabindex="-1">
         <li class="li-nav">分享文章</li>
       </a>
-    <li class="li-nav">
-      <a class="a-sub-nav subnav-bot" href="{{ url('/article') }}" tabindex="-1">相關文章</a>
-    </li>
+      <a class="a-sub-nav subnav-bot" href="{{ url('/article') }}" tabindex="-1">
+        <li class="li-nav">相關文章</li>
+      </a>
     <div class="div-dropdown-background-2 navBackground"></div>
   </ul>
 </div>
