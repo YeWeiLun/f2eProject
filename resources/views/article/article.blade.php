@@ -29,15 +29,15 @@
   <!-- 主選單 -->
   @include("layouts.navbar")
   <!-- Content -->
-  <section>
-    <div class="div-navWhiteBackGround"></div>
+  <div class="div-navWhiteBackGround"></div>
+  <div class="div-content">
   @include("article.articleCatalogue")
     <div class="grid">
       @foreach ($articleList as $article)
         @include("article.articleGrid")
       @endforeach
     </div>
-  </section>
+  </div>
   @include("layouts.footer")
   <!-- 浮框 -->
   @include('modal')

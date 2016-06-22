@@ -8,6 +8,9 @@ hr {
 .a-articleTurn{
   cursor: pointer;
 }
+.a-creationTurn{
+  cursor: pointer;
+}
 /* div */
 
 .div-content {

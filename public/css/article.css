@@ -9,8 +9,14 @@ nav { top: 0px; }
 
 /* ---- grid ---- */
 
+.div-content {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #262829;
+}
+
 .grid {
-  background: white;
   font-family: Calibri Light, Arial, 微軟正黑體, sans-serif;
   font-size: 18px;
 }

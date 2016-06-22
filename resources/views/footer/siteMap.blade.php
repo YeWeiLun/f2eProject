@@ -34,6 +34,7 @@
       <hr>
       <div class='div-page-switch'>
         {{Form::open(array('action'=>'ArticleController@getArticleListByCatalogue'))}}
+        {{Form::close()}}
       </div>
       <a href="#" data-url="1" class="a-articleTurn"><span class="span-mapContent" >塑膠類</span></a>
       <br>
@@ -47,26 +48,33 @@
       <br>
     </div>
     <div class="div-mapZone">
-      <a href="article"><span class="span-mapTitle">作品分享〉</span></a>
+      <a href="creation"><span class="span-mapTitle">作品分享〉</span></a>
       <hr>
-      <a href="#"><span class="span-mapContent">+新增貼文</span></a>
+      @if(Session::has('user'))
+      <a href="{{ url('/creation') }}"><span class="span-mapContent">+新增貼文</span></a>
       <br>
-      <a href="#"><span class="span-mapContent">塑膠類</span></a>
+      @endif
+      <a href="#" data-url="1" class="a-creationTurn"><span class="span-mapContent">塑膠類</span></a>
       <br>
-      <a href="#"><span class="span-mapContent">金屬類</span></a>
+      <a href="#" data-url="2" class="a-creationTurn"><span class="span-mapContent">金屬類</span></a>
       <br>
-      <a href="#"><span class="span-mapContent">紙類</span></a>
+      <a href="#" data-url="3" class="a-creationTurn"><span class="span-mapContent">紙類</span></a>
       <br>
-      <a href="#"><span class="span-mapContent">玻璃類</span></a>
+      <a href="#" data-url="4" class="a-creationTurn"><span class="span-mapContent">玻璃類</span></a>
       <br>
-      <a href="#"><span class="span-mapContent">衣料類</span></a>
+      <a href="#" data-url="5" class="a-creationTurn"><span class="span-mapContent">衣料類</span></a>
       <br>
-      <hr>
     </div>
     <div class="div-mapZone">
       <span class="span-mapTitleNoLink">個人設定</span>
       <hr>
+      @if(Session::has('user'))
+      {{Form::open(array('action'=>'UserController@logout'))}}
+      <a href="#" class="a-sub-nav" tabindex="-1" onclick="$(this).parent('form').submit();"><span class="span-mapContent" >登出</span></a>
+      {{Form::close()}}
+      @else
       <a href="#"><span class="span-mapContent func-login" data-url="sign_in">登入</span></a>
+      @endif
       <br>
     </div>
     <div class="div-mapZone">
