@@ -28,6 +28,7 @@
   @endif
     <!-- 主選單 -->
     @include("layouts.navbar")
+    {{Form::open(array('action'=>'ArticleController@getArticleListByCatalogue','id'=>'switch-pager'))}}
     <div class="div-landingPage">
             <p class="p-slogan">大家都厭惡的垃圾，回收後竟然變成這樣，真是太神啦！</p>
             <br>
@@ -36,11 +37,12 @@
                 </a>
     </div>
     <div class='div-page-switch'>
-      {{Form::open(array('action'=>'ArticleController@getArticleListByCatalogue'))}}
+
     </div>
     <div id="more" class="div-more">
+        <input type ='hidden' name = 'catalogue'>
         <div class="div-category" data-url="1">
-          <img src="{{URL::asset('img/Plastic.png')}}" class="img-more" title="塑膠類" data="{{URL::asset('img/PlasticRecyle.jpg')}}"/></div>
+          <img src="{{URL::asset('img/Plastic.png')}}" class="img-more" title="塑膠類" data="{{URL::asset('img/PlasticRecyle.jpg')}}"/></div></a>
         <div class="div-category-2" data-url="2">
         <img src="{{URL::asset('img/Metal.png')}}" class="img-more-2" title="金屬類"  data="{{URL::asset('img/MetalRecyle.jpg')}}"/></div>
         <div class="div-category-2" data-url="3">
@@ -49,8 +51,9 @@
           <img src="{{URL::asset('img/Glass.png')}}" class="img-more-4" title="玻璃類"  data="{{URL::asset('img/GlassRecyle.jpg')}}"/></div>
         <div class="div-category-2 div-category-3" data-url="5">
           <img src="{{URL::asset('img/Cloth.png')}}" class="img-more-5" title="衣料類 "  data="{{URL::asset('img/ClothRecyle.jpg')}}"/></div>
-    </div>
 
+    </div>
+{{Form::close()}}
     <div class="clear"></div>
     @include("layouts.footer")
   <!-- 浮框 -->
