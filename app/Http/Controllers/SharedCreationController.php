@@ -67,7 +67,7 @@ class SharedCreationController extends Controller
     {
       $title=$req->input('title');
       $pic=$req->input('scPic');
-      $pic=$this->imgurUrl($this->pic);
+      $pic=$this->imgurUrl($pic);
       $content=$req->input('content');
       $cid = $req->input('catalogue');
       $youtubeUrl = $this->formYoutubeUrl($req->input('youtubeUrl'));
