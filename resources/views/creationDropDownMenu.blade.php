@@ -5,7 +5,7 @@
 
   <ul class="dropdown-menu">
     <li class="li-nav">
-      <a class="a-sub-nav" href="addCreation" tabindex="-1">分享創作</a>
+      <a class="a-sub-nav" href="{{ url('/addCreation') }}" tabindex="-1">分享創作</a>
     </li>
     <li class="li-nav">
       <a class="a-sub-nav subnav-bot" href="{{ url('/creation') }}" tabindex="-1">相關創作</a>
