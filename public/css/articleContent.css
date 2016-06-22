@@ -21,4 +21,7 @@
   h1{
     font-size: 25px;
   }
+  .div-fb{
+    display: none;
+  }
 }

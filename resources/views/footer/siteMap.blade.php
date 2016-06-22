@@ -32,10 +32,8 @@
     <div class="div-mapZone">
       <a href="article"><span class="span-mapTitle">文章〉</span></a>
       <hr>
-      <div class='div-page-switch'>
-        {{Form::open(array('action'=>'ArticleController@getArticleListByCatalogue'))}}
-        {{Form::close()}}
-      </div>
+        {{Form::open(array('action'=>'ArticleController@getArticleListByCatalogue','id'=>'switch-pager'))}}
+        <input type ='hidden' name = 'catalogue'>
       <a href="#" data-url="1" class="a-articleTurn"><span class="span-mapContent" >塑膠類</span></a>
       <br>
       <a href="#" data-url="2" class="a-articleTurn"><span class="span-mapContent">金屬類</span></a>
@@ -46,6 +44,7 @@
       <br>
       <a href="#" data-url="5" class="a-articleTurn"><span class="span-mapContent">衣料類</span></a>
       <br>
+      {{Form::close()}}
     </div>
     <div class="div-mapZone">
       <a href="creation"><span class="span-mapTitle">作品分享〉</span></a>
@@ -54,6 +53,8 @@
       <a href="{{ url('/creation') }}"><span class="span-mapContent">+新增貼文</span></a>
       <br>
       @endif
+      {{Form::open(array('action'=>'SharedCreationController@getByCatalogue','id'=>'switch-pager2'))}}
+      <input type ='hidden' name = 'catalogue'>
       <a href="#" data-url="1" class="a-creationTurn"><span class="span-mapContent">塑膠類</span></a>
       <br>
       <a href="#" data-url="2" class="a-creationTurn"><span class="span-mapContent">金屬類</span></a>
@@ -64,6 +65,7 @@
       <br>
       <a href="#" data-url="5" class="a-creationTurn"><span class="span-mapContent">衣料類</span></a>
       <br>
+      {{Form::close()}}
     </div>
     <div class="div-mapZone">
       <span class="span-mapTitleNoLink">個人設定</span>

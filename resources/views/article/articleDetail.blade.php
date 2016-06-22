@@ -33,7 +33,9 @@
     <div class="div-content">
       <div class="div-detail">
         <h1>{{$article->title}}</h1>
+        <div class="div-fb">
         <div class="fb-like" data-href="{{$article->tid}}" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+      </div>
         <div class='article-content'>
           <?php echo $article->content ?>
         </div>
