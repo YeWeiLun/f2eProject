@@ -4,20 +4,7 @@ $(document).ready(function(){
     $('.div-more').css('background-image',"url("+$(this).attr('data')+")");
   });
   $(".div-category,.div-category-2,.div-category-3").click(function(){
-    history.pushState("", "New Title", document.location+"article");
-    $.ajax({
-      url: 'article',
-      type:'post',
-      data:
-      {
-        'catalogue':$(this).data('url'),
-        '_token':$("input[name='_token']").val()
-      },
-      success:function(resp){
-        $('body').html(resp);
-
-      }
-
-    })
-  });
+    $('input[name="catalogue"]').val($(this).data('url'));
+    $('#switch-pager').submit();
+  })
 });
