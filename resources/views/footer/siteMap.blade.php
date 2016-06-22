@@ -50,7 +50,7 @@
       <a href="creation"><span class="span-mapTitle">作品分享〉</span></a>
       <hr>
       @if(Session::has('user'))
-      <a href="{{ url('/creation') }}"><span class="span-mapContent">+新增貼文</span></a>
+      <a href="{{ url('/addCreation') }}"><span class="span-mapContent">+新增貼文</span></a>
       <br>
       @endif
       {{Form::open(array('action'=>'SharedCreationController@getByCatalogue','id'=>'switch-pager2'))}}

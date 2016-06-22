@@ -6,7 +6,9 @@ html { overflow-y: scroll;}
 body { font-family: sans-serif; }
 
 nav { top: 0px; }
-
+img:hover{
+  opacity: 0.5;
+}
 /* ---- grid ---- */
 
 .div-content {
