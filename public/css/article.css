@@ -21,6 +21,10 @@ nav { top: 0px; }
   font-size: 18px;
 }
 
+.catalogue-list{
+  margin-left: 10px;
+}
+
 /* clear fix */
 .grid:after {
   content: '';

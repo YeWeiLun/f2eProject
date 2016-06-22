@@ -8,8 +8,8 @@ var player = $("#player");
 
 function onYouTubeIframeAPIReady() {//此函數在IFrame Player API code 載入後將自動呼叫
   var vId = $("#player").data('url');
-  var wdth=$(window).width() - 90;
-  var heigh=wdth*2/3;
+  var wdth=$(window).width()*0.7;
+  var heigh=wdth*0.56;
  player = new YT.Player('player', {
    height: heigh,
    width: wdth,
